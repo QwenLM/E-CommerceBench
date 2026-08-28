@@ -1,0 +1,577 @@
+supplier_id,supplier_name,supplier_email,supplier_type,personality,urgency,fraud_type,categories_served,bankruptcy_threshold
+SUP-0001,Swift Supply,swiftsupply.sup-0001@wholesale.com,good,Enthusiastic,0.816,,Major Appliances,11
+SUP-0002,Craft Direct,craftdirect.sup-0002@wholesale.com,good,Unpredictable,0.436,,Major Appliances,16
+SUP-0003,Alpine Solutions,alpinesolutions.sup-0003@wholesale.com,good,Friendly,0.823,,Major Appliances,19
+SUP-0004,Apex Source,apexsource.sup-0004@wholesale.com,good,Friendly,0.428,,Major Appliances,16
+SUP-0005,Pacific Commerce,pacificcommerce.sup-0005@wholesale.com,good,Strategic,0.331,,Major Appliances,17
+SUP-0006,Forge Hub,forgehub.sup-0006@wholesale.com,good,Tough,0.661,,Major Appliances,10
+SUP-0007,Ridge Direct,ridgedirect.sup-0007@wholesale.com,good,Tough,0.719,,Major Appliances,12
+SUP-0008,River Distribution,riverdistribution.sup-0008@wholesale.com,good,Enthusiastic,0.464,,Major Appliances,12
+SUP-0009,Peak Express,peakexpress.sup-0009@wholesale.com,bad,Adversarial,0.141,vip_fee,Major Appliances,16
+SUP-0010,Copper Wholesale,copperwholesale.sup-0010@wholesale.com,bad,Adversarial,0.137,future_discount,Major Appliances,18
+SUP-0011,Forge Commerce,forgecommerce.sup-0011@wholesale.com,bad,Adversarial,0.08,qty_bait,Major Appliances,10
+SUP-0012,Golden Global,goldenglobal.sup-0012@wholesale.com,good,Enthusiastic,0.714,,Small Appliances,13
+SUP-0013,Solar Supply,solarsupply.sup-0013@wholesale.com,good,Unpredictable,0.67,,Small Appliances,15
+SUP-0014,Apex Link,apexlink.sup-0014@wholesale.com,good,Friendly,0.71,,Small Appliances,12
+SUP-0015,Apex Trading,apextrading.sup-0015@wholesale.com,good,Strategic,0.699,,Small Appliances,14
+SUP-0016,Alpine Mart,alpinemart.sup-0016@wholesale.com,good,Friendly,0.589,,Small Appliances,12
+SUP-0017,Steel Source,steelsource.sup-0017@wholesale.com,good,Friendly,0.344,,Small Appliances,15
+SUP-0018,Golden Commerce,goldencommerce.sup-0018@wholesale.com,good,Unpredictable,0.106,,Small Appliances,12
+SUP-0019,Pacific Pro,pacificpro.sup-0019@wholesale.com,bad,Adversarial,0.159,quality_downgrade,Small Appliances,19
+SUP-0020,Forge Wholesale,forgewholesale.sup-0020@wholesale.com,bad,Adversarial,0.065,fake_urgency,Small Appliances,11
+SUP-0021,Maple Trading,mapletrading.sup-0021@wholesale.com,good,Friendly,0.675,,Audio & Video Electronics,17
+SUP-0022,Bright Trading,brighttrading.sup-0022@wholesale.com,good,Enthusiastic,0.727,,Audio & Video Electronics,17
+SUP-0023,Swift Source,swiftsource.sup-0023@wholesale.com,good,Friendly,0.157,,Audio & Video Electronics,16
+SUP-0024,Cedar Wholesale,cedarwholesale.sup-0024@wholesale.com,good,Tough,0.895,,Audio & Video Electronics,17
+SUP-0025,River Commerce,rivercommerce.sup-0025@wholesale.com,good,Friendly,0.36,,Audio & Video Electronics,13
+SUP-0026,Oak Commerce,oakcommerce.sup-0026@wholesale.com,good,Unpredictable,0.119,,Audio & Video Electronics,15
+SUP-0027,Forge Pro,forgepro.sup-0027@wholesale.com,good,Friendly,0.167,,Audio & Video Electronics,20
+SUP-0028,Metro Trading,metrotrading.sup-0028@wholesale.com,bad,Adversarial,0.124,vip_fee,Audio & Video Electronics,20
+SUP-0029,Cedar Supply,cedarsupply.sup-0029@wholesale.com,bad,Adversarial,0.146,future_discount,Audio & Video Electronics,19
+SUP-0030,Alpine Commerce,alpinecommerce.sup-0030@wholesale.com,bad,Adversarial,0.085,qty_bait,Audio & Video Electronics,14
+SUP-0031,Peak Supply,peaksupply.sup-0031@wholesale.com,good,Friendly,0.593,,Smartphones,18
+SUP-0032,Stone Global,stoneglobal.sup-0032@wholesale.com,good,Friendly,0.847,,Smartphones,18
+SUP-0033,Craft Commerce,craftcommerce.sup-0033@wholesale.com,good,Friendly,0.149,,Smartphones,20
+SUP-0034,Stone Trading,stonetrading.sup-0034@wholesale.com,good,Tough,0.374,,Smartphones,16
+SUP-0035,Valley Solutions,valleysolutions.sup-0035@wholesale.com,good,Enthusiastic,0.436,,Smartphones,13
+SUP-0036,Urban Hub,urbanhub.sup-0036@wholesale.com,good,Enthusiastic,0.128,,Smartphones,10
+SUP-0037,Copper Source,coppersource.sup-0037@wholesale.com,good,Enthusiastic,0.167,,Smartphones,14
+SUP-0038,Crystal Direct,crystaldirect.sup-0038@wholesale.com,bad,Adversarial,0.16,quality_downgrade,Smartphones,11
+SUP-0039,Solar Trading,solartrading.sup-0039@wholesale.com,bad,Adversarial,0.17,fake_urgency,Smartphones,16
+SUP-0040,Azure Hub,azurehub.sup-0040@wholesale.com,bad,Adversarial,0.15,vip_fee,Smartphones,12
+SUP-0041,Valley Wholesale,valleywholesale.sup-0041@wholesale.com,good,Friendly,0.895,,Laptops,15
+SUP-0042,Vertex Express,vertexexpress.sup-0042@wholesale.com,good,Unpredictable,0.422,,Laptops,17
+SUP-0043,Peak Trading,peaktrading.sup-0043@wholesale.com,good,Professional,0.385,,Laptops,15
+SUP-0044,Core Trading,coretrading.sup-0044@wholesale.com,good,Professional,0.219,,Laptops,11
+SUP-0045,Forge Trading,forgetrading.sup-0045@wholesale.com,good,Professional,0.198,,Laptops,13
+SUP-0046,Zenith Hub,zenithhub.sup-0046@wholesale.com,good,Friendly,0.204,,Laptops,19
+SUP-0047,Apex Direct,apexdirect.sup-0047@wholesale.com,good,Friendly,0.368,,Laptops,16
+SUP-0048,Titan World,titanworld.sup-0048@wholesale.com,bad,Adversarial,0.071,future_discount,Laptops,12
+SUP-0049,Stone World,stoneworld.sup-0049@wholesale.com,bad,Adversarial,0.109,qty_bait,Laptops,19
+SUP-0050,Azure Direct,azuredirect.sup-0050@wholesale.com,good,Enthusiastic,0.421,,Computer Hardware & Peripherals,17
+SUP-0051,Ridge Goods,ridgegoods.sup-0051@wholesale.com,good,Unpredictable,0.446,,Computer Hardware & Peripherals,17
+SUP-0052,Copper Pro,copperpro.sup-0052@wholesale.com,good,Tough,0.692,,Computer Hardware & Peripherals,12
+SUP-0053,Vertex Link,vertexlink.sup-0053@wholesale.com,good,Enthusiastic,0.883,,Computer Hardware & Peripherals,11
+SUP-0054,Luna Goods,lunagoods.sup-0054@wholesale.com,good,Professional,0.741,,Computer Hardware & Peripherals,17
+SUP-0055,Titan Direct,titandirect.sup-0055@wholesale.com,good,Unpredictable,0.646,,Computer Hardware & Peripherals,19
+SUP-0056,Bright Supply,brightsupply.sup-0056@wholesale.com,good,Enthusiastic,0.876,,Computer Hardware & Peripherals,11
+SUP-0057,Valley Express,valleyexpress.sup-0057@wholesale.com,bad,Adversarial,0.14,quality_downgrade,Computer Hardware & Peripherals,16
+SUP-0058,Iron Mart,ironmart.sup-0058@wholesale.com,bad,Adversarial,0.052,fake_urgency,Computer Hardware & Peripherals,12
+SUP-0059,Crown Direct,crowndirect.sup-0059@wholesale.com,good,Friendly,0.34,,3C Digital Accessories,13
+SUP-0060,Emerald Source,emeraldsource.sup-0060@wholesale.com,good,Professional,0.871,,3C Digital Accessories,20
+SUP-0061,Peak Link,peaklink.sup-0061@wholesale.com,good,Professional,0.703,,3C Digital Accessories,19
+SUP-0062,Golden World,goldenworld.sup-0062@wholesale.com,good,Professional,0.721,,3C Digital Accessories,14
+SUP-0063,Maple Hub,maplehub.sup-0063@wholesale.com,good,Enthusiastic,0.489,,3C Digital Accessories,13
+SUP-0064,Luna Distribution,lunadistribution.sup-0064@wholesale.com,good,Friendly,0.68,,3C Digital Accessories,12
+SUP-0065,Vertex Global,vertexglobal.sup-0065@wholesale.com,good,Enthusiastic,0.504,,3C Digital Accessories,20
+SUP-0066,Copper Mart,coppermart.sup-0066@wholesale.com,bad,Adversarial,0.194,vip_fee,3C Digital Accessories,17
+SUP-0067,Star Link,starlink.sup-0067@wholesale.com,bad,Adversarial,0.067,future_discount,3C Digital Accessories,20
+SUP-0068,Crystal Global,crystalglobal.sup-0068@wholesale.com,bad,Adversarial,0.171,qty_bait,3C Digital Accessories,12
+SUP-0069,Urban Direct,urbandirect.sup-0069@wholesale.com,good,Friendly,0.681,,Storage Devices,18
+SUP-0070,Silver Solutions,silversolutions.sup-0070@wholesale.com,good,Unpredictable,0.118,,Storage Devices,13
+SUP-0071,Prime Direct,primedirect.sup-0071@wholesale.com,good,Unpredictable,0.629,,Storage Devices,13
+SUP-0072,Luna Solutions,lunasolutions.sup-0072@wholesale.com,good,Friendly,0.267,,Storage Devices,11
+SUP-0073,Elite Supply,elitesupply.sup-0073@wholesale.com,good,Strategic,0.439,,Storage Devices,19
+SUP-0074,Swift Pro,swiftpro.sup-0074@wholesale.com,good,Enthusiastic,0.458,,Storage Devices,18
+SUP-0075,River Mart,rivermart.sup-0075@wholesale.com,good,Professional,0.374,,Storage Devices,17
+SUP-0076,Peak Goods,peakgoods.sup-0076@wholesale.com,bad,Adversarial,0.143,quality_downgrade,Storage Devices,17
+SUP-0077,Ridge Link,ridgelink.sup-0077@wholesale.com,bad,Adversarial,0.184,fake_urgency,Storage Devices,12
+SUP-0078,Emerald Pro,emeraldpro.sup-0078@wholesale.com,bad,Adversarial,0.18,vip_fee,Storage Devices,10
+SUP-0079,Vertex Commerce,vertexcommerce.sup-0079@wholesale.com,good,Enthusiastic,0.219,,Networking Equipment,20
+SUP-0080,Elite Global,eliteglobal.sup-0080@wholesale.com,good,Enthusiastic,0.222,,Networking Equipment,20
+SUP-0081,Valley Link,valleylink.sup-0081@wholesale.com,good,Friendly,0.225,,Networking Equipment,10
+SUP-0082,Zenith Solutions,zenithsolutions.sup-0082@wholesale.com,good,Strategic,0.403,,Networking Equipment,20
+SUP-0083,Forge Distribution,forgedistribution.sup-0083@wholesale.com,good,Friendly,0.516,,Networking Equipment,10
+SUP-0084,Nova Solutions,novasolutions.sup-0084@wholesale.com,good,Enthusiastic,0.321,,Networking Equipment,10
+SUP-0085,Horizon Mart,horizonmart.sup-0085@wholesale.com,good,Enthusiastic,0.559,,Networking Equipment,19
+SUP-0086,Forge Source,forgesource.sup-0086@wholesale.com,bad,Adversarial,0.091,future_discount,Networking Equipment,13
+SUP-0087,Elite Distribution,elitedistribution.sup-0087@wholesale.com,bad,Adversarial,0.159,qty_bait,Networking Equipment,15
+SUP-0088,Pacific Trading,pacifictrading.sup-0088@wholesale.com,bad,Adversarial,0.153,quality_downgrade,Networking Equipment,14
+SUP-0089,Bright Goods,brightgoods.sup-0089@wholesale.com,good,Unpredictable,0.294,,Women's Fashion,14
+SUP-0090,Luna Wholesale,lunawholesale.sup-0090@wholesale.com,good,Enthusiastic,0.546,,Women's Fashion,17
+SUP-0091,Star Wholesale,starwholesale.sup-0091@wholesale.com,good,Enthusiastic,0.165,,Women's Fashion,13
+SUP-0092,Star Source,starsource.sup-0092@wholesale.com,good,Strategic,0.161,,Women's Fashion,12
+SUP-0093,Metro Supply,metrosupply.sup-0093@wholesale.com,good,Strategic,0.42,,Women's Fashion,18
+SUP-0094,Pacific Link,pacificlink.sup-0094@wholesale.com,good,Friendly,0.518,,Women's Fashion,18
+SUP-0095,Copper Global,copperglobal.sup-0095@wholesale.com,good,Unpredictable,0.661,,Women's Fashion,15
+SUP-0096,Luna Supply,lunasupply.sup-0096@wholesale.com,bad,Adversarial,0.158,fake_urgency,Women's Fashion,14
+SUP-0097,Crystal Mart,crystalmart.sup-0097@wholesale.com,bad,Adversarial,0.13,vip_fee,Women's Fashion,16
+SUP-0098,Core World,coreworld.sup-0098@wholesale.com,good,Friendly,0.106,,Men's Clothing,14
+SUP-0099,Swift Solutions,swiftsolutions.sup-0099@wholesale.com,good,Professional,0.336,,Men's Clothing,12
+SUP-0100,Core Global,coreglobal.sup-0100@wholesale.com,good,Unpredictable,0.605,,Men's Clothing,10
+SUP-0101,Azure Solutions,azuresolutions.sup-0101@wholesale.com,good,Friendly,0.771,,Men's Clothing,13
+SUP-0102,Nexus Supply,nexussupply.sup-0102@wholesale.com,good,Friendly,0.406,,Men's Clothing,19
+SUP-0103,Crystal Pro,crystalpro.sup-0103@wholesale.com,good,Enthusiastic,0.58,,Men's Clothing,14
+SUP-0104,Craft Source,craftsource.sup-0104@wholesale.com,good,Unpredictable,0.499,,Men's Clothing,12
+SUP-0105,Forge Mart,forgemart.sup-0105@wholesale.com,bad,Adversarial,0.168,future_discount,Men's Clothing,17
+SUP-0106,Metro Goods,metrogoods.sup-0106@wholesale.com,bad,Adversarial,0.142,qty_bait,Men's Clothing,14
+SUP-0107,Crystal Distribution,crystaldistribution.sup-0107@wholesale.com,bad,Adversarial,0.186,quality_downgrade,Men's Clothing,19
+SUP-0108,Forge Link,forgelink.sup-0108@wholesale.com,good,Friendly,0.73,,Underwear & Loungewear,18
+SUP-0109,Oak Wholesale,oakwholesale.sup-0109@wholesale.com,good,Enthusiastic,0.871,,Underwear & Loungewear,16
+SUP-0110,Titan Source,titansource.sup-0110@wholesale.com,good,Enthusiastic,0.674,,Underwear & Loungewear,18
+SUP-0111,Ridge Mart,ridgemart.sup-0111@wholesale.com,good,Enthusiastic,0.512,,Underwear & Loungewear,20
+SUP-0112,Alpine Global,alpineglobal.sup-0112@wholesale.com,good,Enthusiastic,0.846,,Underwear & Loungewear,17
+SUP-0113,Crown Distribution,crowndistribution.sup-0113@wholesale.com,good,Tough,0.475,,Underwear & Loungewear,11
+SUP-0114,Stone Link,stonelink.sup-0114@wholesale.com,good,Professional,0.693,,Underwear & Loungewear,11
+SUP-0115,Iron Source,ironsource.sup-0115@wholesale.com,bad,Adversarial,0.164,fake_urgency,Underwear & Loungewear,13
+SUP-0116,Oak Global,oakglobal.sup-0116@wholesale.com,bad,Adversarial,0.111,vip_fee,Underwear & Loungewear,14
+SUP-0117,Urban Mart,urbanmart.sup-0117@wholesale.com,bad,Adversarial,0.131,future_discount,Underwear & Loungewear,20
+SUP-0118,Zenith Distribution,zenithdistribution.sup-0118@wholesale.com,good,Strategic,0.811,,Fashion Accessories,19
+SUP-0119,Golden Trading,goldentrading.sup-0119@wholesale.com,good,Enthusiastic,0.361,,Fashion Accessories,18
+SUP-0120,Urban Express,urbanexpress.sup-0120@wholesale.com,good,Tough,0.474,,Fashion Accessories,20
+SUP-0121,Swift World,swiftworld.sup-0121@wholesale.com,good,Unpredictable,0.271,,Fashion Accessories,13
+SUP-0122,Star Supply,starsupply.sup-0122@wholesale.com,good,Friendly,0.266,,Fashion Accessories,19
+SUP-0123,Polar Wholesale,polarwholesale.sup-0123@wholesale.com,good,Enthusiastic,0.121,,Fashion Accessories,12
+SUP-0124,Craft Hub,crafthub.sup-0124@wholesale.com,good,Unpredictable,0.471,,Fashion Accessories,14
+SUP-0125,Stone Goods,stonegoods.sup-0125@wholesale.com,bad,Adversarial,0.069,qty_bait,Fashion Accessories,18
+SUP-0126,Core Link,corelink.sup-0126@wholesale.com,bad,Adversarial,0.129,quality_downgrade,Fashion Accessories,19
+SUP-0127,Elite Pro,elitepro.sup-0127@wholesale.com,bad,Adversarial,0.167,fake_urgency,Fashion Accessories,20
+SUP-0128,Apex Solutions,apexsolutions.sup-0128@wholesale.com,good,Unpredictable,0.106,,Sportswear & Casual,14
+SUP-0129,Emerald World,emeraldworld.sup-0129@wholesale.com,good,Tough,0.32,,Sportswear & Casual,19
+SUP-0130,Azure Distribution,azuredistribution.sup-0130@wholesale.com,good,Unpredictable,0.682,,Sportswear & Casual,16
+SUP-0131,Nova Hub,novahub.sup-0131@wholesale.com,good,Enthusiastic,0.583,,Sportswear & Casual,17
+SUP-0132,Zenith Goods,zenithgoods.sup-0132@wholesale.com,good,Enthusiastic,0.324,,Sportswear & Casual,16
+SUP-0133,Oak Direct,oakdirect.sup-0133@wholesale.com,good,Unpredictable,0.752,,Sportswear & Casual,10
+SUP-0134,Oak Trading,oaktrading.sup-0134@wholesale.com,good,Enthusiastic,0.139,,Sportswear & Casual,10
+SUP-0135,Crystal Commerce,crystalcommerce.sup-0135@wholesale.com,bad,Adversarial,0.16,vip_fee,Sportswear & Casual,14
+SUP-0136,Star World,starworld.sup-0136@wholesale.com,bad,Adversarial,0.177,future_discount,Sportswear & Casual,20
+SUP-0137,Zenith Supply,zenithsupply.sup-0137@wholesale.com,bad,Adversarial,0.133,qty_bait,Sportswear & Casual,12
+SUP-0138,Crown Hub,crownhub.sup-0138@wholesale.com,good,Friendly,0.712,,Women's Shoes,15
+SUP-0139,Solar Hub,solarhub.sup-0139@wholesale.com,good,Unpredictable,0.61,,Women's Shoes,11
+SUP-0140,Alpine Goods,alpinegoods.sup-0140@wholesale.com,good,Enthusiastic,0.893,,Women's Shoes,17
+SUP-0141,Valley World,valleyworld.sup-0141@wholesale.com,good,Tough,0.636,,Women's Shoes,18
+SUP-0142,Prime Pro,primepro.sup-0142@wholesale.com,good,Tough,0.807,,Women's Shoes,17
+SUP-0143,Nexus Direct,nexusdirect.sup-0143@wholesale.com,good,Friendly,0.418,,Women's Shoes,17
+SUP-0144,Urban Distribution,urbandistribution.sup-0144@wholesale.com,good,Enthusiastic,0.103,,Women's Shoes,11
+SUP-0145,Polar Global,polarglobal.sup-0145@wholesale.com,bad,Adversarial,0.12,quality_downgrade,Women's Shoes,11
+SUP-0146,Ridge Trading,ridgetrading.sup-0146@wholesale.com,bad,Adversarial,0.093,fake_urgency,Women's Shoes,16
+SUP-0147,Harbor Pro,harborpro.sup-0147@wholesale.com,bad,Adversarial,0.16,vip_fee,Women's Shoes,15
+SUP-0148,Horizon Pro,horizonpro.sup-0148@wholesale.com,good,Strategic,0.69,,Men's Shoes,13
+SUP-0149,Craft World,craftworld.sup-0149@wholesale.com,good,Enthusiastic,0.216,,Men's Shoes,13
+SUP-0150,Star Direct,stardirect.sup-0150@wholesale.com,good,Tough,0.304,,Men's Shoes,15
+SUP-0151,Copper Goods,coppergoods.sup-0151@wholesale.com,good,Tough,0.648,,Men's Shoes,15
+SUP-0152,Steel Wholesale,steelwholesale.sup-0152@wholesale.com,good,Friendly,0.693,,Men's Shoes,18
+SUP-0153,Steel Solutions,steelsolutions.sup-0153@wholesale.com,good,Enthusiastic,0.714,,Men's Shoes,15
+SUP-0154,Atlas Commerce,atlascommerce.sup-0154@wholesale.com,good,Professional,0.168,,Men's Shoes,12
+SUP-0155,Peak Distribution,peakdistribution.sup-0155@wholesale.com,bad,Adversarial,0.149,future_discount,Men's Shoes,19
+SUP-0156,Nexus Express,nexusexpress.sup-0156@wholesale.com,bad,Adversarial,0.128,qty_bait,Men's Shoes,12
+SUP-0157,Alpine Link,alpinelink.sup-0157@wholesale.com,bad,Adversarial,0.12,quality_downgrade,Men's Shoes,19
+SUP-0158,Pacific Distribution,pacificdistribution.sup-0158@wholesale.com,good,Friendly,0.578,,Sneakers,13
+SUP-0159,Golden Wholesale,goldenwholesale.sup-0159@wholesale.com,good,Professional,0.882,,Sneakers,20
+SUP-0160,Azure Link,azurelink.sup-0160@wholesale.com,good,Tough,0.222,,Sneakers,15
+SUP-0161,River Direct,riverdirect.sup-0161@wholesale.com,good,Strategic,0.768,,Sneakers,18
+SUP-0162,Copper Distribution,copperdistribution.sup-0162@wholesale.com,good,Enthusiastic,0.149,,Sneakers,12
+SUP-0163,Luna Direct,lunadirect.sup-0163@wholesale.com,good,Strategic,0.611,,Sneakers,13
+SUP-0164,Oak Hub,oakhub.sup-0164@wholesale.com,good,Friendly,0.453,,Sneakers,18
+SUP-0165,Harbor Direct,harbordirect.sup-0165@wholesale.com,bad,Adversarial,0.14,fake_urgency,Sneakers,18
+SUP-0166,River Express,riverexpress.sup-0166@wholesale.com,bad,Adversarial,0.086,vip_fee,Sneakers,13
+SUP-0167,Zenith Express,zenithexpress.sup-0167@wholesale.com,bad,Adversarial,0.079,future_discount,Sneakers,11
+SUP-0168,Maple Mart,maplemart.sup-0168@wholesale.com,good,Friendly,0.548,,Bags & Luggage,11
+SUP-0169,Urban Supply,urbansupply.sup-0169@wholesale.com,good,Friendly,0.655,,Bags & Luggage,11
+SUP-0170,Metro Link,metrolink.sup-0170@wholesale.com,good,Enthusiastic,0.856,,Bags & Luggage,14
+SUP-0171,Crystal Wholesale,crystalwholesale.sup-0171@wholesale.com,good,Unpredictable,0.826,,Bags & Luggage,14
+SUP-0172,Star Goods,stargoods.sup-0172@wholesale.com,good,Unpredictable,0.29,,Bags & Luggage,16
+SUP-0173,Horizon Commerce,horizoncommerce.sup-0173@wholesale.com,good,Enthusiastic,0.735,,Bags & Luggage,15
+SUP-0174,Copper Supply,coppersupply.sup-0174@wholesale.com,good,Tough,0.438,,Bags & Luggage,12
+SUP-0175,Alpine Direct,alpinedirect.sup-0175@wholesale.com,bad,Adversarial,0.129,qty_bait,Bags & Luggage,15
+SUP-0176,Nexus Commerce,nexuscommerce.sup-0176@wholesale.com,bad,Adversarial,0.166,quality_downgrade,Bags & Luggage,16
+SUP-0177,Core Distribution,coredistribution.sup-0177@wholesale.com,good,Strategic,0.868,,Snacks & Nuts,14
+SUP-0178,Valley Direct,valleydirect.sup-0178@wholesale.com,good,Strategic,0.108,,Snacks & Nuts,10
+SUP-0179,Bright World,brightworld.sup-0179@wholesale.com,good,Enthusiastic,0.224,,Snacks & Nuts,15
+SUP-0180,Emerald Trading,emeraldtrading.sup-0180@wholesale.com,good,Strategic,0.442,,Snacks & Nuts,18
+SUP-0181,Cedar Link,cedarlink.sup-0181@wholesale.com,good,Enthusiastic,0.187,,Snacks & Nuts,10
+SUP-0182,Valley Mart,valleymart.sup-0182@wholesale.com,good,Friendly,0.322,,Snacks & Nuts,13
+SUP-0183,Polar Goods,polargoods.sup-0183@wholesale.com,good,Friendly,0.244,,Snacks & Nuts,20
+SUP-0184,Emerald Commerce,emeraldcommerce.sup-0184@wholesale.com,bad,Adversarial,0.066,fake_urgency,Snacks & Nuts,14
+SUP-0185,Cedar Global,cedarglobal.sup-0185@wholesale.com,bad,Adversarial,0.124,vip_fee,Snacks & Nuts,12
+SUP-0186,Vertex Wholesale,vertexwholesale.sup-0186@wholesale.com,bad,Adversarial,0.165,future_discount,Snacks & Nuts,18
+SUP-0187,Silver Source,silversource.sup-0187@wholesale.com,good,Friendly,0.624,,Groceries & Staples,16
+SUP-0188,Maple Express,mapleexpress.sup-0188@wholesale.com,good,Strategic,0.793,,Groceries & Staples,19
+SUP-0189,Titan Global,titanglobal.sup-0189@wholesale.com,good,Enthusiastic,0.518,,Groceries & Staples,12
+SUP-0190,Summit Pro,summitpro.sup-0190@wholesale.com,good,Enthusiastic,0.519,,Groceries & Staples,15
+SUP-0191,Iron Pro,ironpro.sup-0191@wholesale.com,good,Tough,0.481,,Groceries & Staples,13
+SUP-0192,Bright Distribution,brightdistribution.sup-0192@wholesale.com,good,Enthusiastic,0.751,,Groceries & Staples,19
+SUP-0193,Apex World,apexworld.sup-0193@wholesale.com,good,Friendly,0.261,,Groceries & Staples,15
+SUP-0194,Swift Mart,swiftmart.sup-0194@wholesale.com,bad,Adversarial,0.073,qty_bait,Groceries & Staples,20
+SUP-0195,Harbor Solutions,harborsolutions.sup-0195@wholesale.com,bad,Adversarial,0.103,quality_downgrade,Groceries & Staples,17
+SUP-0196,Solar Global,solarglobal.sup-0196@wholesale.com,good,Tough,0.467,,Coffee & Beverages,16
+SUP-0197,Bright Commerce,brightcommerce.sup-0197@wholesale.com,good,Tough,0.664,,Coffee & Beverages,15
+SUP-0198,Steel Goods,steelgoods.sup-0198@wholesale.com,good,Tough,0.214,,Coffee & Beverages,18
+SUP-0199,Star Hub,starhub.sup-0199@wholesale.com,good,Enthusiastic,0.687,,Coffee & Beverages,11
+SUP-0200,Titan Link,titanlink.sup-0200@wholesale.com,good,Professional,0.313,,Coffee & Beverages,18
+SUP-0201,Valley Distribution,valleydistribution.sup-0201@wholesale.com,good,Unpredictable,0.502,,Coffee & Beverages,19
+SUP-0202,Prime Express,primeexpress.sup-0202@wholesale.com,good,Tough,0.788,,Coffee & Beverages,13
+SUP-0203,Bright Link,brightlink.sup-0203@wholesale.com,bad,Adversarial,0.109,fake_urgency,Coffee & Beverages,14
+SUP-0204,Steel World,steelworld.sup-0204@wholesale.com,bad,Adversarial,0.106,vip_fee,Coffee & Beverages,17
+SUP-0205,Harbor Source,harborsource.sup-0205@wholesale.com,good,Tough,0.576,,Fresh Food & Meat,12
+SUP-0206,Polar Mart,polarmart.sup-0206@wholesale.com,good,Unpredictable,0.514,,Fresh Food & Meat,10
+SUP-0207,Silver Global,silverglobal.sup-0207@wholesale.com,good,Tough,0.301,,Fresh Food & Meat,13
+SUP-0208,Polar Link,polarlink.sup-0208@wholesale.com,good,Enthusiastic,0.874,,Fresh Food & Meat,12
+SUP-0209,Iron Distribution,irondistribution.sup-0209@wholesale.com,good,Professional,0.284,,Fresh Food & Meat,10
+SUP-0210,Vertex Direct,vertexdirect.sup-0210@wholesale.com,good,Friendly,0.597,,Fresh Food & Meat,16
+SUP-0211,Emerald Hub,emeraldhub.sup-0211@wholesale.com,good,Professional,0.17,,Fresh Food & Meat,16
+SUP-0212,Swift Direct,swiftdirect.sup-0212@wholesale.com,bad,Adversarial,0.076,future_discount,Fresh Food & Meat,10
+SUP-0213,Golden Hub,goldenhub.sup-0213@wholesale.com,bad,Adversarial,0.128,qty_bait,Fresh Food & Meat,13
+SUP-0214,Pacific Goods,pacificgoods.sup-0214@wholesale.com,bad,Adversarial,0.183,quality_downgrade,Fresh Food & Meat,17
+SUP-0215,Summit Hub,summithub.sup-0215@wholesale.com,good,Friendly,0.222,,Alcoholic Beverages,19
+SUP-0216,Metro Mart,metromart.sup-0216@wholesale.com,good,Professional,0.522,,Alcoholic Beverages,14
+SUP-0217,Steel Hub,steelhub.sup-0217@wholesale.com,good,Professional,0.568,,Alcoholic Beverages,18
+SUP-0218,Core Wholesale,corewholesale.sup-0218@wholesale.com,good,Unpredictable,0.299,,Alcoholic Beverages,17
+SUP-0219,Nova Global,novaglobal.sup-0219@wholesale.com,good,Friendly,0.445,,Alcoholic Beverages,20
+SUP-0220,Apex Global,apexglobal.sup-0220@wholesale.com,good,Enthusiastic,0.171,,Alcoholic Beverages,12
+SUP-0221,Core Goods,coregoods.sup-0221@wholesale.com,good,Strategic,0.238,,Alcoholic Beverages,15
+SUP-0222,Prime Global,primeglobal.sup-0222@wholesale.com,bad,Adversarial,0.191,fake_urgency,Alcoholic Beverages,17
+SUP-0223,Atlas Supply,atlassupply.sup-0223@wholesale.com,bad,Adversarial,0.091,vip_fee,Alcoholic Beverages,12
+SUP-0224,Stone Distribution,stonedistribution.sup-0224@wholesale.com,good,Tough,0.143,,Health Supplements,11
+SUP-0225,Maple Wholesale,maplewholesale.sup-0225@wholesale.com,good,Professional,0.551,,Health Supplements,16
+SUP-0226,Ridge Express,ridgeexpress.sup-0226@wholesale.com,good,Enthusiastic,0.555,,Health Supplements,15
+SUP-0227,Atlas World,atlasworld.sup-0227@wholesale.com,good,Unpredictable,0.489,,Health Supplements,10
+SUP-0228,Oak Solutions,oaksolutions.sup-0228@wholesale.com,good,Strategic,0.196,,Health Supplements,14
+SUP-0229,Elite Wholesale,elitewholesale.sup-0229@wholesale.com,good,Friendly,0.689,,Health Supplements,18
+SUP-0230,Pacific Wholesale,pacificwholesale.sup-0230@wholesale.com,good,Strategic,0.628,,Health Supplements,17
+SUP-0231,Steel Link,steellink.sup-0231@wholesale.com,bad,Adversarial,0.139,future_discount,Health Supplements,11
+SUP-0232,Vertex Supply,vertexsupply.sup-0232@wholesale.com,bad,Adversarial,0.06,qty_bait,Health Supplements,18
+SUP-0233,Nova Mart,novamart.sup-0233@wholesale.com,bad,Adversarial,0.107,quality_downgrade,Health Supplements,18
+SUP-0234,Emerald Wholesale,emeraldwholesale.sup-0234@wholesale.com,good,Professional,0.69,,Skincare & Beauty,10
+SUP-0235,Stone Wholesale,stonewholesale.sup-0235@wholesale.com,good,Unpredictable,0.645,,Skincare & Beauty,16
+SUP-0236,Valley Hub,valleyhub.sup-0236@wholesale.com,good,Strategic,0.642,,Skincare & Beauty,14
+SUP-0237,Peak Pro,peakpro.sup-0237@wholesale.com,good,Unpredictable,0.117,,Skincare & Beauty,19
+SUP-0238,Oak Link,oaklink.sup-0238@wholesale.com,good,Strategic,0.347,,Skincare & Beauty,10
+SUP-0239,Summit Express,summitexpress.sup-0239@wholesale.com,good,Professional,0.245,,Skincare & Beauty,10
+SUP-0240,Metro Hub,metrohub.sup-0240@wholesale.com,good,Strategic,0.403,,Skincare & Beauty,20
+SUP-0241,Cedar Distribution,cedardistribution.sup-0241@wholesale.com,good,Friendly,0.298,,Skincare & Beauty,12
+SUP-0242,Horizon Source,horizonsource.sup-0242@wholesale.com,bad,Adversarial,0.101,fake_urgency,Skincare & Beauty,20
+SUP-0243,Ridge Hub,ridgehub.sup-0243@wholesale.com,bad,Adversarial,0.19,vip_fee,Skincare & Beauty,13
+SUP-0244,Elite Link,elitelink.sup-0244@wholesale.com,bad,Adversarial,0.079,future_discount,Skincare & Beauty,20
+SUP-0245,Valley Commerce,valleycommerce.sup-0245@wholesale.com,good,Enthusiastic,0.281,,Beauty Devices,18
+SUP-0246,Forge Supply,forgesupply.sup-0246@wholesale.com,good,Professional,0.567,,Beauty Devices,19
+SUP-0247,Vertex Pro,vertexpro.sup-0247@wholesale.com,good,Friendly,0.289,,Beauty Devices,10
+SUP-0248,Nova Express,novaexpress.sup-0248@wholesale.com,good,Professional,0.217,,Beauty Devices,19
+SUP-0249,Iron World,ironworld.sup-0249@wholesale.com,good,Friendly,0.631,,Beauty Devices,14
+SUP-0250,Urban Global,urbanglobal.sup-0250@wholesale.com,good,Strategic,0.795,,Beauty Devices,13
+SUP-0251,Swift Commerce,swiftcommerce.sup-0251@wholesale.com,good,Professional,0.702,,Beauty Devices,11
+SUP-0252,Stone Pro,stonepro.sup-0252@wholesale.com,bad,Adversarial,0.119,qty_bait,Beauty Devices,14
+SUP-0253,Harbor Link,harborlink.sup-0253@wholesale.com,bad,Adversarial,0.155,quality_downgrade,Beauty Devices,13
+SUP-0254,Metro Wholesale,metrowholesale.sup-0254@wholesale.com,good,Professional,0.847,,Personal Care & Massage,20
+SUP-0255,Polar Solutions,polarsolutions.sup-0255@wholesale.com,good,Tough,0.205,,Personal Care & Massage,17
+SUP-0256,Urban Link,urbanlink.sup-0256@wholesale.com,good,Strategic,0.815,,Personal Care & Massage,13
+SUP-0257,Craft Mart,craftmart.sup-0257@wholesale.com,good,Tough,0.873,,Personal Care & Massage,11
+SUP-0258,Zenith Link,zenithlink.sup-0258@wholesale.com,good,Strategic,0.833,,Personal Care & Massage,12
+SUP-0259,Nexus Solutions,nexussolutions.sup-0259@wholesale.com,good,Friendly,0.556,,Personal Care & Massage,18
+SUP-0260,Silver Trading,silvertrading.sup-0260@wholesale.com,good,Friendly,0.783,,Personal Care & Massage,16
+SUP-0261,Golden Solutions,goldensolutions.sup-0261@wholesale.com,bad,Adversarial,0.155,fake_urgency,Personal Care & Massage,20
+SUP-0262,Titan Commerce,titancommerce.sup-0262@wholesale.com,bad,Adversarial,0.097,vip_fee,Personal Care & Massage,10
+SUP-0263,Harbor Wholesale,harborwholesale.sup-0263@wholesale.com,bad,Adversarial,0.081,future_discount,Personal Care & Massage,19
+SUP-0264,River Solutions,riversolutions.sup-0264@wholesale.com,good,Friendly,0.848,,Sports & Fitness,19
+SUP-0265,Crystal Goods,crystalgoods.sup-0265@wholesale.com,good,Strategic,0.366,,Sports & Fitness,15
+SUP-0266,Summit Commerce,summitcommerce.sup-0266@wholesale.com,good,Professional,0.514,,Sports & Fitness,13
+SUP-0267,Maple World,mapleworld.sup-0267@wholesale.com,good,Enthusiastic,0.237,,Sports & Fitness,11
+SUP-0268,Apex Supply,apexsupply.sup-0268@wholesale.com,good,Enthusiastic,0.782,,Sports & Fitness,16
+SUP-0269,Swift Express,swiftexpress.sup-0269@wholesale.com,good,Unpredictable,0.302,,Sports & Fitness,17
+SUP-0270,Copper Trading,coppertrading.sup-0270@wholesale.com,good,Tough,0.492,,Sports & Fitness,12
+SUP-0271,Elite Goods,elitegoods.sup-0271@wholesale.com,bad,Adversarial,0.146,qty_bait,Sports & Fitness,16
+SUP-0272,Star Global,starglobal.sup-0272@wholesale.com,bad,Adversarial,0.122,quality_downgrade,Sports & Fitness,17
+SUP-0273,Cedar Express,cedarexpress.sup-0273@wholesale.com,bad,Adversarial,0.113,fake_urgency,Sports & Fitness,14
+SUP-0274,Ridge World,ridgeworld.sup-0274@wholesale.com,good,Unpredictable,0.427,,Sports Bags & Accessories,10
+SUP-0275,Harbor Supply,harborsupply.sup-0275@wholesale.com,good,Enthusiastic,0.542,,Sports Bags & Accessories,12
+SUP-0276,Azure World,azureworld.sup-0276@wholesale.com,good,Friendly,0.185,,Sports Bags & Accessories,15
+SUP-0277,Valley Goods,valleygoods.sup-0277@wholesale.com,good,Strategic,0.298,,Sports Bags & Accessories,16
+SUP-0278,Bright Solutions,brightsolutions.sup-0278@wholesale.com,good,Professional,0.318,,Sports Bags & Accessories,12
+SUP-0279,Harbor Trading,harbortrading.sup-0279@wholesale.com,good,Strategic,0.408,,Sports Bags & Accessories,18
+SUP-0280,Summit Supply,summitsupply.sup-0280@wholesale.com,good,Professional,0.204,,Sports Bags & Accessories,18
+SUP-0281,Silver Mart,silvermart.sup-0281@wholesale.com,bad,Adversarial,0.095,vip_fee,Sports Bags & Accessories,13
+SUP-0282,Forge Goods,forgegoods.sup-0282@wholesale.com,bad,Adversarial,0.112,future_discount,Sports Bags & Accessories,18
+SUP-0283,Golden Direct,goldendirect.sup-0283@wholesale.com,bad,Adversarial,0.151,qty_bait,Sports Bags & Accessories,15
+SUP-0284,Star Solutions,starsolutions.sup-0284@wholesale.com,good,Strategic,0.49,,Outdoor & Camping,11
+SUP-0285,Ridge Global,ridgeglobal.sup-0285@wholesale.com,good,Friendly,0.14,,Outdoor & Camping,14
+SUP-0286,Urban Commerce,urbancommerce.sup-0286@wholesale.com,good,Unpredictable,0.739,,Outdoor & Camping,14
+SUP-0287,Copper World,copperworld.sup-0287@wholesale.com,good,Unpredictable,0.185,,Outdoor & Camping,15
+SUP-0288,Maple Link,maplelink.sup-0288@wholesale.com,good,Enthusiastic,0.367,,Outdoor & Camping,20
+SUP-0289,Silver Pro,silverpro.sup-0289@wholesale.com,good,Enthusiastic,0.136,,Outdoor & Camping,15
+SUP-0290,Vertex Mart,vertexmart.sup-0290@wholesale.com,good,Strategic,0.679,,Outdoor & Camping,17
+SUP-0291,Luna World,lunaworld.sup-0291@wholesale.com,bad,Adversarial,0.198,quality_downgrade,Outdoor & Camping,20
+SUP-0292,Elite Hub,elitehub.sup-0292@wholesale.com,bad,Adversarial,0.1,fake_urgency,Outdoor & Camping,12
+SUP-0293,Nexus Pro,nexuspro.sup-0293@wholesale.com,bad,Adversarial,0.146,vip_fee,Outdoor & Camping,12
+SUP-0294,Ridge Distribution,ridgedistribution.sup-0294@wholesale.com,good,Friendly,0.779,,Children's Clothing,16
+SUP-0295,Titan Supply,titansupply.sup-0295@wholesale.com,good,Enthusiastic,0.777,,Children's Clothing,17
+SUP-0296,Prime Trading,primetrading.sup-0296@wholesale.com,good,Friendly,0.831,,Children's Clothing,15
+SUP-0297,Metro Express,metroexpress.sup-0297@wholesale.com,good,Strategic,0.419,,Children's Clothing,14
+SUP-0298,Pacific Global,pacificglobal.sup-0298@wholesale.com,good,Unpredictable,0.884,,Children's Clothing,13
+SUP-0299,Titan Goods,titangoods.sup-0299@wholesale.com,good,Strategic,0.287,,Children's Clothing,10
+SUP-0300,Oak Distribution,oakdistribution.sup-0300@wholesale.com,good,Tough,0.256,,Children's Clothing,13
+SUP-0301,Titan Solutions,titansolutions.sup-0301@wholesale.com,bad,Adversarial,0.073,future_discount,Children's Clothing,11
+SUP-0302,Polar Trading,polartrading.sup-0302@wholesale.com,bad,Adversarial,0.115,qty_bait,Children's Clothing,20
+SUP-0303,Cedar Trading,cedartrading.sup-0303@wholesale.com,bad,Adversarial,0.184,quality_downgrade,Children's Clothing,12
+SUP-0304,Prime Hub,primehub.sup-0304@wholesale.com,good,Strategic,0.615,,Children's Shoes,13
+SUP-0305,Silver Supply,silversupply.sup-0305@wholesale.com,good,Friendly,0.336,,Children's Shoes,14
+SUP-0306,Vertex World,vertexworld.sup-0306@wholesale.com,good,Tough,0.483,,Children's Shoes,15
+SUP-0307,Emerald Global,emeraldglobal.sup-0307@wholesale.com,good,Tough,0.465,,Children's Shoes,16
+SUP-0308,Luna Link,lunalink.sup-0308@wholesale.com,good,Unpredictable,0.584,,Children's Shoes,14
+SUP-0309,Peak Hub,peakhub.sup-0309@wholesale.com,good,Friendly,0.271,,Children's Shoes,20
+SUP-0310,Atlas Global,atlasglobal.sup-0310@wholesale.com,good,Enthusiastic,0.772,,Children's Shoes,18
+SUP-0311,Steel Pro,steelpro.sup-0311@wholesale.com,bad,Adversarial,0.068,fake_urgency,Children's Shoes,10
+SUP-0312,Zenith Wholesale,zenithwholesale.sup-0312@wholesale.com,bad,Adversarial,0.142,vip_fee,Children's Shoes,19
+SUP-0313,Harbor Distribution,harbordistribution.sup-0313@wholesale.com,good,Enthusiastic,0.176,,Baby Products,17
+SUP-0314,Titan Mart,titanmart.sup-0314@wholesale.com,good,Unpredictable,0.838,,Baby Products,12
+SUP-0315,Oak Goods,oakgoods.sup-0315@wholesale.com,good,Friendly,0.241,,Baby Products,13
+SUP-0316,Golden Goods,goldengoods.sup-0316@wholesale.com,good,Enthusiastic,0.511,,Baby Products,17
+SUP-0317,Crown Global,crownglobal.sup-0317@wholesale.com,good,Strategic,0.342,,Baby Products,13
+SUP-0318,Ridge Supply,ridgesupply.sup-0318@wholesale.com,good,Enthusiastic,0.7,,Baby Products,10
+SUP-0319,Stone Mart,stonemart.sup-0319@wholesale.com,good,Professional,0.515,,Baby Products,11
+SUP-0320,Iron Supply,ironsupply.sup-0320@wholesale.com,good,Enthusiastic,0.319,,Baby Products,10
+SUP-0321,Azure Mart,azuremart.sup-0321@wholesale.com,bad,Adversarial,0.152,future_discount,Baby Products,16
+SUP-0322,Alpine World,alpineworld.sup-0322@wholesale.com,bad,Adversarial,0.186,qty_bait,Baby Products,10
+SUP-0323,Golden Pro,goldenpro.sup-0323@wholesale.com,bad,Adversarial,0.196,quality_downgrade,Baby Products,20
+SUP-0324,Horizon Link,horizonlink.sup-0324@wholesale.com,good,Professional,0.195,,Maternity Products,19
+SUP-0325,Crystal Link,crystallink.sup-0325@wholesale.com,good,Strategic,0.189,,Maternity Products,16
+SUP-0326,Luna Pro,lunapro.sup-0326@wholesale.com,good,Tough,0.61,,Maternity Products,16
+SUP-0327,Peak Mart,peakmart.sup-0327@wholesale.com,good,Unpredictable,0.293,,Maternity Products,12
+SUP-0328,Metro Commerce,metrocommerce.sup-0328@wholesale.com,good,Enthusiastic,0.777,,Maternity Products,12
+SUP-0329,Pacific Supply,pacificsupply.sup-0329@wholesale.com,good,Friendly,0.125,,Maternity Products,18
+SUP-0330,River Goods,rivergoods.sup-0330@wholesale.com,good,Enthusiastic,0.725,,Maternity Products,10
+SUP-0331,Emerald Express,emeraldexpress.sup-0331@wholesale.com,bad,Adversarial,0.162,fake_urgency,Maternity Products,17
+SUP-0332,Core Direct,coredirect.sup-0332@wholesale.com,bad,Adversarial,0.138,vip_fee,Maternity Products,15
+SUP-0333,Oak Mart,oakmart.sup-0333@wholesale.com,bad,Adversarial,0.172,future_discount,Maternity Products,11
+SUP-0334,Horizon Solutions,horizonsolutions.sup-0334@wholesale.com,good,Friendly,0.727,,Toys & Educational,18
+SUP-0335,Urban Pro,urbanpro.sup-0335@wholesale.com,good,Professional,0.665,,Toys & Educational,20
+SUP-0336,Atlas Mart,atlasmart.sup-0336@wholesale.com,good,Tough,0.757,,Toys & Educational,16
+SUP-0337,Maple Goods,maplegoods.sup-0337@wholesale.com,good,Friendly,0.413,,Toys & Educational,12
+SUP-0338,Steel Trading,steeltrading.sup-0338@wholesale.com,good,Unpredictable,0.39,,Toys & Educational,12
+SUP-0339,Steel Distribution,steeldistribution.sup-0339@wholesale.com,good,Enthusiastic,0.544,,Toys & Educational,13
+SUP-0340,Iron Trading,irontrading.sup-0340@wholesale.com,good,Friendly,0.519,,Toys & Educational,11
+SUP-0341,Atlas Pro,atlaspro.sup-0341@wholesale.com,bad,Adversarial,0.095,qty_bait,Toys & Educational,20
+SUP-0342,Stone Source,stonesource.sup-0342@wholesale.com,bad,Adversarial,0.115,quality_downgrade,Toys & Educational,16
+SUP-0343,Alpine Supply,alpinesupply.sup-0343@wholesale.com,good,Friendly,0.332,,Furniture,12
+SUP-0344,Star Commerce,starcommerce.sup-0344@wholesale.com,good,Tough,0.651,,Furniture,11
+SUP-0345,Titan Wholesale,titanwholesale.sup-0345@wholesale.com,good,Tough,0.666,,Furniture,10
+SUP-0346,Oak Express,oakexpress.sup-0346@wholesale.com,good,Friendly,0.18,,Furniture,12
+SUP-0347,Prime World,primeworld.sup-0347@wholesale.com,good,Tough,0.534,,Furniture,17
+SUP-0348,Metro Solutions,metrosolutions.sup-0348@wholesale.com,good,Friendly,0.642,,Furniture,15
+SUP-0349,Horizon Wholesale,horizonwholesale.sup-0349@wholesale.com,good,Friendly,0.41,,Furniture,11
+SUP-0350,Crown Commerce,crowncommerce.sup-0350@wholesale.com,bad,Adversarial,0.167,fake_urgency,Furniture,17
+SUP-0351,Iron Goods,irongoods.sup-0351@wholesale.com,bad,Adversarial,0.146,vip_fee,Furniture,16
+SUP-0352,Crown Trading,crowntrading.sup-0352@wholesale.com,bad,Adversarial,0.16,future_discount,Furniture,16
+SUP-0353,Nova Link,novalink.sup-0353@wholesale.com,good,Strategic,0.799,,Bedding,19
+SUP-0354,Horizon Global,horizonglobal.sup-0354@wholesale.com,good,Friendly,0.776,,Bedding,10
+SUP-0355,Crystal Hub,crystalhub.sup-0355@wholesale.com,good,Professional,0.609,,Bedding,11
+SUP-0356,Iron Hub,ironhub.sup-0356@wholesale.com,good,Unpredictable,0.404,,Bedding,16
+SUP-0357,Cedar Mart,cedarmart.sup-0357@wholesale.com,good,Unpredictable,0.401,,Bedding,14
+SUP-0358,Alpine Source,alpinesource.sup-0358@wholesale.com,good,Enthusiastic,0.251,,Bedding,13
+SUP-0359,Star Distribution,stardistribution.sup-0359@wholesale.com,good,Enthusiastic,0.895,,Bedding,10
+SUP-0360,Vertex Distribution,vertexdistribution.sup-0360@wholesale.com,bad,Adversarial,0.167,qty_bait,Bedding,16
+SUP-0361,Copper Solutions,coppersolutions.sup-0361@wholesale.com,bad,Adversarial,0.194,quality_downgrade,Bedding,12
+SUP-0362,Stone Commerce,stonecommerce.sup-0362@wholesale.com,good,Strategic,0.36,,Household Essentials,15
+SUP-0363,Harbor Goods,harborgoods.sup-0363@wholesale.com,good,Friendly,0.405,,Household Essentials,13
+SUP-0364,Atlas Solutions,atlassolutions.sup-0364@wholesale.com,good,Friendly,0.299,,Household Essentials,12
+SUP-0365,River Source,riversource.sup-0365@wholesale.com,good,Tough,0.86,,Household Essentials,17
+SUP-0366,Star Trading,startrading.sup-0366@wholesale.com,good,Friendly,0.869,,Household Essentials,17
+SUP-0367,Silver Hub,silverhub.sup-0367@wholesale.com,good,Enthusiastic,0.356,,Household Essentials,20
+SUP-0368,Craft Express,craftexpress.sup-0368@wholesale.com,good,Strategic,0.68,,Household Essentials,10
+SUP-0369,Maple Direct,mapledirect.sup-0369@wholesale.com,bad,Adversarial,0.097,fake_urgency,Household Essentials,15
+SUP-0370,Atlas Distribution,atlasdistribution.sup-0370@wholesale.com,bad,Adversarial,0.141,vip_fee,Household Essentials,17
+SUP-0371,Swift Link,swiftlink.sup-0371@wholesale.com,good,Enthusiastic,0.708,,Storage & Organization,10
+SUP-0372,Valley Source,valleysource.sup-0372@wholesale.com,good,Enthusiastic,0.131,,Storage & Organization,19
+SUP-0373,Maple Distribution,mapledistribution.sup-0373@wholesale.com,good,Friendly,0.388,,Storage & Organization,15
+SUP-0374,Nova Wholesale,novawholesale.sup-0374@wholesale.com,good,Tough,0.736,,Storage & Organization,19
+SUP-0375,Atlas Goods,atlasgoods.sup-0375@wholesale.com,good,Enthusiastic,0.747,,Storage & Organization,14
+SUP-0376,Horizon Supply,horizonsupply.sup-0376@wholesale.com,good,Friendly,0.41,,Storage & Organization,19
+SUP-0377,Atlas Express,atlasexpress.sup-0377@wholesale.com,good,Friendly,0.383,,Storage & Organization,13
+SUP-0378,Peak Solutions,peaksolutions.sup-0378@wholesale.com,bad,Adversarial,0.067,future_discount,Storage & Organization,12
+SUP-0379,Nova Pro,novapro.sup-0379@wholesale.com,bad,Adversarial,0.086,qty_bait,Storage & Organization,18
+SUP-0380,Crystal Trading,crystaltrading.sup-0380@wholesale.com,good,Enthusiastic,0.667,,Lighting,11
+SUP-0381,Summit Goods,summitgoods.sup-0381@wholesale.com,good,Unpredictable,0.741,,Lighting,17
+SUP-0382,Azure Wholesale,azurewholesale.sup-0382@wholesale.com,good,Friendly,0.14,,Lighting,12
+SUP-0383,Azure Goods,azuregoods.sup-0383@wholesale.com,good,Friendly,0.319,,Lighting,13
+SUP-0384,Horizon World,horizonworld.sup-0384@wholesale.com,good,Professional,0.474,,Lighting,16
+SUP-0385,Nova Direct,novadirect.sup-0385@wholesale.com,good,Professional,0.298,,Lighting,17
+SUP-0386,Stone Direct,stonedirect.sup-0386@wholesale.com,good,Strategic,0.319,,Lighting,16
+SUP-0387,Cedar Source,cedarsource.sup-0387@wholesale.com,good,Enthusiastic,0.567,,Lighting,12
+SUP-0388,Apex Express,apexexpress.sup-0388@wholesale.com,bad,Adversarial,0.057,quality_downgrade,Lighting,12
+SUP-0389,Harbor Express,harborexpress.sup-0389@wholesale.com,bad,Adversarial,0.118,fake_urgency,Lighting,14
+SUP-0390,Steel Supply,steelsupply.sup-0390@wholesale.com,good,Unpredictable,0.685,,Home Building Materials,18
+SUP-0391,Titan Trading,titantrading.sup-0391@wholesale.com,good,Strategic,0.72,,Home Building Materials,20
+SUP-0392,Emerald Distribution,emeralddistribution.sup-0392@wholesale.com,good,Unpredictable,0.216,,Home Building Materials,13
+SUP-0393,Ridge Solutions,ridgesolutions.sup-0393@wholesale.com,good,Enthusiastic,0.217,,Home Building Materials,19
+SUP-0394,Crystal Express,crystalexpress.sup-0394@wholesale.com,good,Professional,0.802,,Home Building Materials,11
+SUP-0395,Valley Pro,valleypro.sup-0395@wholesale.com,good,Strategic,0.867,,Home Building Materials,11
+SUP-0396,Polar Pro,polarpro.sup-0396@wholesale.com,good,Strategic,0.519,,Home Building Materials,15
+SUP-0397,Forge Express,forgeexpress.sup-0397@wholesale.com,bad,Adversarial,0.198,vip_fee,Home Building Materials,13
+SUP-0398,Crown Wholesale,crownwholesale.sup-0398@wholesale.com,bad,Adversarial,0.084,future_discount,Home Building Materials,19
+SUP-0399,Apex Wholesale,apexwholesale.sup-0399@wholesale.com,good,Tough,0.232,,Basic Construction Materials,15
+SUP-0400,Stone Solutions,stonesolutions.sup-0400@wholesale.com,good,Friendly,0.219,,Basic Construction Materials,20
+SUP-0401,Vertex Goods,vertexgoods.sup-0401@wholesale.com,good,Tough,0.865,,Basic Construction Materials,11
+SUP-0402,Summit Distribution,summitdistribution.sup-0402@wholesale.com,good,Friendly,0.89,,Basic Construction Materials,13
+SUP-0403,Nova Commerce,novacommerce.sup-0403@wholesale.com,good,Friendly,0.553,,Basic Construction Materials,17
+SUP-0404,Vertex Trading,vertextrading.sup-0404@wholesale.com,good,Friendly,0.884,,Basic Construction Materials,13
+SUP-0405,Stone Express,stoneexpress.sup-0405@wholesale.com,good,Friendly,0.701,,Basic Construction Materials,11
+SUP-0406,Elite World,eliteworld.sup-0406@wholesale.com,bad,Adversarial,0.189,qty_bait,Basic Construction Materials,20
+SUP-0407,Crown World,crownworld.sup-0407@wholesale.com,bad,Adversarial,0.083,quality_downgrade,Basic Construction Materials,12
+SUP-0408,Titan Distribution,titandistribution.sup-0408@wholesale.com,good,Friendly,0.8,,Cleaning Tools,19
+SUP-0409,River Global,riverglobal.sup-0409@wholesale.com,good,Strategic,0.306,,Cleaning Tools,14
+SUP-0410,Summit Link,summitlink.sup-0410@wholesale.com,good,Professional,0.777,,Cleaning Tools,10
+SUP-0411,Azure Commerce,azurecommerce.sup-0411@wholesale.com,good,Enthusiastic,0.755,,Cleaning Tools,17
+SUP-0412,Swift Hub,swifthub.sup-0412@wholesale.com,good,Professional,0.127,,Cleaning Tools,10
+SUP-0413,Solar Pro,solarpro.sup-0413@wholesale.com,good,Professional,0.196,,Cleaning Tools,15
+SUP-0414,Zenith Mart,zenithmart.sup-0414@wholesale.com,good,Strategic,0.727,,Cleaning Tools,13
+SUP-0415,Apex Hub,apexhub.sup-0415@wholesale.com,bad,Adversarial,0.08,fake_urgency,Cleaning Tools,11
+SUP-0416,Forge World,forgeworld.sup-0416@wholesale.com,bad,Adversarial,0.156,vip_fee,Cleaning Tools,14
+SUP-0417,Horizon Direct,horizondirect.sup-0417@wholesale.com,bad,Adversarial,0.169,future_discount,Cleaning Tools,15
+SUP-0418,Nexus World,nexusworld.sup-0418@wholesale.com,good,Strategic,0.82,,Kitchenware,20
+SUP-0419,Forge Direct,forgedirect.sup-0419@wholesale.com,good,Unpredictable,0.223,,Kitchenware,10
+SUP-0420,Pacific Solutions,pacificsolutions.sup-0420@wholesale.com,good,Professional,0.126,,Kitchenware,16
+SUP-0421,Prime Commerce,primecommerce.sup-0421@wholesale.com,good,Unpredictable,0.532,,Kitchenware,11
+SUP-0422,Prime Mart,primemart.sup-0422@wholesale.com,good,Tough,0.576,,Kitchenware,15
+SUP-0423,Azure Pro,azurepro.sup-0423@wholesale.com,good,Enthusiastic,0.869,,Kitchenware,15
+SUP-0424,River Wholesale,riverwholesale.sup-0424@wholesale.com,good,Professional,0.232,,Kitchenware,11
+SUP-0425,Luna Mart,lunamart.sup-0425@wholesale.com,bad,Adversarial,0.059,qty_bait,Kitchenware,12
+SUP-0426,Maple Supply,maplesupply.sup-0426@wholesale.com,bad,Adversarial,0.053,quality_downgrade,Kitchenware,12
+SUP-0427,Oak Pro,oakpro.sup-0427@wholesale.com,good,Tough,0.261,,Cleaning & Hygiene,14
+SUP-0428,Cedar World,cedarworld.sup-0428@wholesale.com,good,Tough,0.776,,Cleaning & Hygiene,12
+SUP-0429,Metro Direct,metrodirect.sup-0429@wholesale.com,good,Unpredictable,0.463,,Cleaning & Hygiene,14
+SUP-0430,Solar Source,solarsource.sup-0430@wholesale.com,good,Friendly,0.235,,Cleaning & Hygiene,15
+SUP-0431,Cedar Solutions,cedarsolutions.sup-0431@wholesale.com,good,Enthusiastic,0.43,,Cleaning & Hygiene,11
+SUP-0432,Summit Direct,summitdirect.sup-0432@wholesale.com,good,Strategic,0.705,,Cleaning & Hygiene,19
+SUP-0433,Nexus Distribution,nexusdistribution.sup-0433@wholesale.com,good,Friendly,0.796,,Cleaning & Hygiene,15
+SUP-0434,Alpine Express,alpineexpress.sup-0434@wholesale.com,bad,Adversarial,0.136,fake_urgency,Cleaning & Hygiene,15
+SUP-0435,Pacific Source,pacificsource.sup-0435@wholesale.com,bad,Adversarial,0.131,vip_fee,Cleaning & Hygiene,13
+SUP-0436,Peak Commerce,peakcommerce.sup-0436@wholesale.com,bad,Adversarial,0.083,future_discount,Cleaning & Hygiene,10
+SUP-0437,Golden Express,goldenexpress.sup-0437@wholesale.com,good,Strategic,0.413,,Gifts & Party Supplies,14
+SUP-0438,Crown Solutions,crownsolutions.sup-0438@wholesale.com,good,Unpredictable,0.86,,Gifts & Party Supplies,12
+SUP-0439,Copper Direct,copperdirect.sup-0439@wholesale.com,good,Enthusiastic,0.26,,Gifts & Party Supplies,15
+SUP-0440,Horizon Express,horizonexpress.sup-0440@wholesale.com,good,Friendly,0.517,,Gifts & Party Supplies,17
+SUP-0441,Luna Commerce,lunacommerce.sup-0441@wholesale.com,good,Friendly,0.653,,Gifts & Party Supplies,12
+SUP-0442,Zenith Trading,zenithtrading.sup-0442@wholesale.com,good,Friendly,0.75,,Gifts & Party Supplies,18
+SUP-0443,Peak World,peakworld.sup-0443@wholesale.com,good,Professional,0.842,,Gifts & Party Supplies,20
+SUP-0444,Iron Direct,irondirect.sup-0444@wholesale.com,bad,Adversarial,0.183,qty_bait,Gifts & Party Supplies,13
+SUP-0445,Steel Express,steelexpress.sup-0445@wholesale.com,bad,Adversarial,0.086,quality_downgrade,Gifts & Party Supplies,15
+SUP-0446,Nexus Goods,nexusgoods.sup-0446@wholesale.com,bad,Adversarial,0.069,fake_urgency,Gifts & Party Supplies,16
+SUP-0447,Urban Source,urbansource.sup-0447@wholesale.com,good,Enthusiastic,0.564,,Lifestyle Accessories,17
+SUP-0448,Maple Global,mapleglobal.sup-0448@wholesale.com,good,Friendly,0.509,,Lifestyle Accessories,15
+SUP-0449,Horizon Distribution,horizondistribution.sup-0449@wholesale.com,good,Professional,0.514,,Lifestyle Accessories,11
+SUP-0450,Nexus Mart,nexusmart.sup-0450@wholesale.com,good,Unpredictable,0.32,,Lifestyle Accessories,14
+SUP-0451,Copper Link,copperlink.sup-0451@wholesale.com,good,Enthusiastic,0.292,,Lifestyle Accessories,18
+SUP-0452,Summit Trading,summittrading.sup-0452@wholesale.com,good,Strategic,0.599,,Lifestyle Accessories,20
+SUP-0453,Golden Link,goldenlink.sup-0453@wholesale.com,good,Strategic,0.704,,Lifestyle Accessories,16
+SUP-0454,Silver Direct,silverdirect.sup-0454@wholesale.com,bad,Adversarial,0.07,vip_fee,Lifestyle Accessories,20
+SUP-0455,Apex Goods,apexgoods.sup-0455@wholesale.com,bad,Adversarial,0.051,future_discount,Lifestyle Accessories,20
+SUP-0456,Core Mart,coremart.sup-0456@wholesale.com,bad,Adversarial,0.198,qty_bait,Lifestyle Accessories,19
+SUP-0457,Forge Global,forgeglobal.sup-0457@wholesale.com,good,Friendly,0.187,,Stationery & Office Supplies,12
+SUP-0458,Emerald Mart,emeraldmart.sup-0458@wholesale.com,good,Enthusiastic,0.225,,Stationery & Office Supplies,19
+SUP-0459,Apex Mart,apexmart.sup-0459@wholesale.com,good,Unpredictable,0.545,,Stationery & Office Supplies,12
+SUP-0460,Craft Global,craftglobal.sup-0460@wholesale.com,good,Unpredictable,0.748,,Stationery & Office Supplies,17
+SUP-0461,Core Express,coreexpress.sup-0461@wholesale.com,good,Enthusiastic,0.791,,Stationery & Office Supplies,11
+SUP-0462,Atlas Wholesale,atlaswholesale.sup-0462@wholesale.com,good,Professional,0.767,,Stationery & Office Supplies,16
+SUP-0463,Vertex Hub,vertexhub.sup-0463@wholesale.com,good,Enthusiastic,0.624,,Stationery & Office Supplies,16
+SUP-0464,Prime Distribution,primedistribution.sup-0464@wholesale.com,bad,Adversarial,0.125,quality_downgrade,Stationery & Office Supplies,18
+SUP-0465,Elite Commerce,elitecommerce.sup-0465@wholesale.com,bad,Adversarial,0.133,fake_urgency,Stationery & Office Supplies,19
+SUP-0466,Apex Pro,apexpro.sup-0466@wholesale.com,good,Friendly,0.21,,Office Equipment,11
+SUP-0467,Emerald Goods,emeraldgoods.sup-0467@wholesale.com,good,Friendly,0.807,,Office Equipment,16
+SUP-0468,Atlas Link,atlaslink.sup-0468@wholesale.com,good,Friendly,0.833,,Office Equipment,19
+SUP-0469,Craft Distribution,craftdistribution.sup-0469@wholesale.com,good,Unpredictable,0.569,,Office Equipment,19
+SUP-0470,Maple Solutions,maplesolutions.sup-0470@wholesale.com,good,Tough,0.868,,Office Equipment,15
+SUP-0471,Crown Pro,crownpro.sup-0471@wholesale.com,good,Enthusiastic,0.613,,Office Equipment,12
+SUP-0472,Summit Source,summitsource.sup-0472@wholesale.com,good,Tough,0.25,,Office Equipment,14
+SUP-0473,Steel Commerce,steelcommerce.sup-0473@wholesale.com,bad,Adversarial,0.094,vip_fee,Office Equipment,17
+SUP-0474,Swift Trading,swifttrading.sup-0474@wholesale.com,bad,Adversarial,0.114,future_discount,Office Equipment,10
+SUP-0475,Nova Supply,novasupply.sup-0475@wholesale.com,good,Friendly,0.89,,Medical Devices,13
+SUP-0476,Elite Mart,elitemart.sup-0476@wholesale.com,good,Friendly,0.392,,Medical Devices,11
+SUP-0477,Elite Trading,elitetrading.sup-0477@wholesale.com,good,Enthusiastic,0.751,,Medical Devices,13
+SUP-0478,Prime Solutions,primesolutions.sup-0478@wholesale.com,good,Unpredictable,0.885,,Medical Devices,11
+SUP-0479,Harbor Hub,harborhub.sup-0479@wholesale.com,good,Enthusiastic,0.518,,Medical Devices,17
+SUP-0480,Core Commerce,corecommerce.sup-0480@wholesale.com,good,Friendly,0.664,,Medical Devices,15
+SUP-0481,Core Source,coresource.sup-0481@wholesale.com,good,Friendly,0.365,,Medical Devices,17
+SUP-0482,Solar Express,solarexpress.sup-0482@wholesale.com,bad,Adversarial,0.09,qty_bait,Medical Devices,19
+SUP-0483,Maple Commerce,maplecommerce.sup-0483@wholesale.com,bad,Adversarial,0.056,quality_downgrade,Medical Devices,18
+SUP-0484,Golden Source,goldensource.sup-0484@wholesale.com,good,Enthusiastic,0.816,,Pet Supplies,14
+SUP-0485,Solar World,solarworld.sup-0485@wholesale.com,good,Strategic,0.237,,Pet Supplies,18
+SUP-0486,Metro Distribution,metrodistribution.sup-0486@wholesale.com,good,Enthusiastic,0.2,,Pet Supplies,12
+SUP-0487,Core Supply,coresupply.sup-0487@wholesale.com,good,Professional,0.461,,Pet Supplies,10
+SUP-0488,Apex Distribution,apexdistribution.sup-0488@wholesale.com,good,Enthusiastic,0.628,,Pet Supplies,12
+SUP-0489,Solar Distribution,solardistribution.sup-0489@wholesale.com,good,Professional,0.845,,Pet Supplies,14
+SUP-0490,Nexus Wholesale,nexuswholesale.sup-0490@wholesale.com,good,Unpredictable,0.649,,Pet Supplies,18
+SUP-0491,Crystal Source,crystalsource.sup-0491@wholesale.com,bad,Adversarial,0.103,fake_urgency,Pet Supplies,12
+SUP-0492,Cedar Commerce,cedarcommerce.sup-0492@wholesale.com,bad,Adversarial,0.196,vip_fee,Pet Supplies,11
+SUP-0493,Peak Global,peakglobal.sup-0493@wholesale.com,bad,Adversarial,0.163,future_discount,Pet Supplies,15
+SUP-0494,River Pro,riverpro.sup-0494@wholesale.com,good,Tough,0.665,,Auto Accessories,14
+SUP-0495,Silver Goods,silvergoods.sup-0495@wholesale.com,good,Unpredictable,0.154,,Auto Accessories,14
+SUP-0496,Horizon Hub,horizonhub.sup-0496@wholesale.com,good,Friendly,0.259,,Auto Accessories,16
+SUP-0497,Polar Distribution,polardistribution.sup-0497@wholesale.com,good,Enthusiastic,0.134,,Auto Accessories,16
+SUP-0498,Craft Link,craftlink.sup-0498@wholesale.com,good,Enthusiastic,0.571,,Auto Accessories,16
+SUP-0499,Craft Wholesale,craftwholesale.sup-0499@wholesale.com,good,Professional,0.785,,Auto Accessories,13
+SUP-0500,Titan Express,titanexpress.sup-0500@wholesale.com,good,Unpredictable,0.291,,Auto Accessories,18
+SUP-0501,Steel Global,steelglobal.sup-0501@wholesale.com,bad,Adversarial,0.137,qty_bait,Auto Accessories,15
+SUP-0502,Horizon Goods,horizongoods.sup-0502@wholesale.com,bad,Adversarial,0.117,quality_downgrade,Auto Accessories,17
+SUP-0503,Zenith Pro,zenithpro.sup-0503@wholesale.com,good,Strategic,0.136,,Hardware & Tools,16
+SUP-0504,Nexus Global,nexusglobal.sup-0504@wholesale.com,good,Professional,0.889,,Hardware & Tools,16
+SUP-0505,Copper Express,copperexpress.sup-0505@wholesale.com,good,Unpredictable,0.383,,Hardware & Tools,16
+SUP-0506,Harbor Commerce,harborcommerce.sup-0506@wholesale.com,good,Friendly,0.446,,Hardware & Tools,14
+SUP-0507,Polar World,polarworld.sup-0507@wholesale.com,good,Professional,0.189,,Hardware & Tools,11
+SUP-0508,Apex Commerce,apexcommerce.sup-0508@wholesale.com,good,Friendly,0.196,,Hardware & Tools,15
+SUP-0509,Copper Hub,copperhub.sup-0509@wholesale.com,good,Professional,0.896,,Hardware & Tools,13
+SUP-0510,Cedar Direct,cedardirect.sup-0510@wholesale.com,bad,Adversarial,0.083,fake_urgency,Hardware & Tools,13
+SUP-0511,Crown Mart,crownmart.sup-0511@wholesale.com,bad,Adversarial,0.089,vip_fee,Hardware & Tools,20
+SUP-0512,Core Solutions,coresolutions.sup-0512@wholesale.com,bad,Adversarial,0.174,future_discount,Hardware & Tools,12
+SUP-0513,Crown Express,crownexpress.sup-0513@wholesale.com,good,Enthusiastic,0.327,,Electrical Supplies,13
+SUP-0514,Emerald Link,emeraldlink.sup-0514@wholesale.com,good,Tough,0.832,,Electrical Supplies,10
+SUP-0515,Prime Goods,primegoods.sup-0515@wholesale.com,good,Enthusiastic,0.501,,Electrical Supplies,17
+SUP-0516,Star Mart,starmart.sup-0516@wholesale.com,good,Strategic,0.604,,Electrical Supplies,20
+SUP-0517,Oak World,oakworld.sup-0517@wholesale.com,good,Friendly,0.809,,Electrical Supplies,14
+SUP-0518,Ridge Pro,ridgepro.sup-0518@wholesale.com,good,Professional,0.143,,Electrical Supplies,16
+SUP-0519,Solar Goods,solargoods.sup-0519@wholesale.com,good,Enthusiastic,0.626,,Electrical Supplies,10
+SUP-0520,Core Hub,corehub.sup-0520@wholesale.com,bad,Adversarial,0.064,qty_bait,Electrical Supplies,12
+SUP-0521,Titan Hub,titanhub.sup-0521@wholesale.com,bad,Adversarial,0.092,quality_downgrade,Electrical Supplies,15
+SUP-0522,Iron Solutions,ironsolutions.sup-0522@wholesale.com,good,Friendly,0.189,,Electronic Components,20
+SUP-0523,Luna Hub,lunahub.sup-0523@wholesale.com,good,Enthusiastic,0.14,,Electronic Components,14
+SUP-0524,Atlas Direct,atlasdirect.sup-0524@wholesale.com,good,Strategic,0.749,,Electronic Components,20
+SUP-0525,Maple Pro,maplepro.sup-0525@wholesale.com,good,Professional,0.159,,Electronic Components,13
+SUP-0526,Emerald Supply,emeraldsupply.sup-0526@wholesale.com,good,Enthusiastic,0.494,,Electronic Components,16
+SUP-0527,Peak Direct,peakdirect.sup-0527@wholesale.com,good,Friendly,0.245,,Electronic Components,17
+SUP-0528,Azure Global,azureglobal.sup-0528@wholesale.com,good,Professional,0.573,,Electronic Components,11
+SUP-0529,Bright Wholesale,brightwholesale.sup-0529@wholesale.com,bad,Adversarial,0.173,fake_urgency,Electronic Components,16
+SUP-0530,Solar Link,solarlink.sup-0530@wholesale.com,bad,Adversarial,0.068,vip_fee,Electronic Components,14
+SUP-0531,River Link,riverlink.sup-0531@wholesale.com,good,Enthusiastic,0.75,,E-Vehicles & Parts,19
+SUP-0532,Nexus Trading,nexustrading.sup-0532@wholesale.com,good,Tough,0.537,,E-Vehicles & Parts,19
+SUP-0533,Cedar Hub,cedarhub.sup-0533@wholesale.com,good,Friendly,0.152,,E-Vehicles & Parts,12
+SUP-0534,Alpine Hub,alpinehub.sup-0534@wholesale.com,good,Enthusiastic,0.115,,E-Vehicles & Parts,14
+SUP-0535,Silver Link,silverlink.sup-0535@wholesale.com,good,Enthusiastic,0.148,,E-Vehicles & Parts,17
+SUP-0536,Core Pro,corepro.sup-0536@wholesale.com,good,Friendly,0.107,,E-Vehicles & Parts,10
+SUP-0537,Solar Solutions,solarsolutions.sup-0537@wholesale.com,good,Unpredictable,0.889,,E-Vehicles & Parts,17
+SUP-0538,Polar Express,polarexpress.sup-0538@wholesale.com,bad,Adversarial,0.159,future_discount,E-Vehicles & Parts,11
+SUP-0539,Elite Express,eliteexpress.sup-0539@wholesale.com,bad,Adversarial,0.078,qty_bait,E-Vehicles & Parts,14
+SUP-0540,Alpine Distribution,alpinedistribution.sup-0540@wholesale.com,good,Strategic,0.168,,Agricultural Supplies,12
+SUP-0541,Steel Direct,steeldirect.sup-0541@wholesale.com,good,Tough,0.207,,Agricultural Supplies,16
+SUP-0542,Emerald Solutions,emeraldsolutions.sup-0542@wholesale.com,good,Professional,0.274,,Agricultural Supplies,15
+SUP-0543,Harbor Mart,harbormart.sup-0543@wholesale.com,good,Enthusiastic,0.207,,Agricultural Supplies,11
+SUP-0544,Atlas Hub,atlashub.sup-0544@wholesale.com,good,Enthusiastic,0.4,,Agricultural Supplies,10
+SUP-0545,Zenith Direct,zenithdirect.sup-0545@wholesale.com,good,Friendly,0.855,,Agricultural Supplies,18
+SUP-0546,Star Express,starexpress.sup-0546@wholesale.com,good,Enthusiastic,0.552,,Agricultural Supplies,13
+SUP-0547,Atlas Trading,atlastrading.sup-0547@wholesale.com,bad,Adversarial,0.109,quality_downgrade,Agricultural Supplies,17
+SUP-0548,Bright Source,brightsource.sup-0548@wholesale.com,bad,Adversarial,0.148,fake_urgency,Agricultural Supplies,15
+SUP-0549,Azure Supply,azuresupply.sup-0549@wholesale.com,bad,Adversarial,0.11,vip_fee,Agricultural Supplies,10
+SUP-0550,Zenith Source,zenithsource.sup-0550@wholesale.com,good,Professional,0.267,,Industrial & Lab Supplies,11
+SUP-0551,Bright Mart,brightmart.sup-0551@wholesale.com,good,Enthusiastic,0.662,,Industrial & Lab Supplies,16
+SUP-0552,Urban Goods,urbangoods.sup-0552@wholesale.com,good,Professional,0.479,,Industrial & Lab Supplies,12
+SUP-0553,Crown Source,crownsource.sup-0553@wholesale.com,good,Friendly,0.304,,Industrial & Lab Supplies,11
+SUP-0554,Craft Goods,craftgoods.sup-0554@wholesale.com,good,Friendly,0.696,,Industrial & Lab Supplies,10
+SUP-0555,Elite Solutions,elitesolutions.sup-0555@wholesale.com,good,Strategic,0.351,,Industrial & Lab Supplies,12
+SUP-0556,Nexus Hub,nexushub.sup-0556@wholesale.com,good,Tough,0.413,,Industrial & Lab Supplies,19
+SUP-0557,Ridge Source,ridgesource.sup-0557@wholesale.com,bad,Adversarial,0.146,future_discount,Industrial & Lab Supplies,20
+SUP-0558,Pacific Hub,pacifichub.sup-0558@wholesale.com,bad,Adversarial,0.068,qty_bait,Industrial & Lab Supplies,14
+SUP-0559,Prime Supply,primesupply.sup-0559@wholesale.com,good,Friendly,0.268,,Collectibles & Figures,12
+SUP-0560,Luna Trading,lunatrading.sup-0560@wholesale.com,good,Enthusiastic,0.73,,Collectibles & Figures,17
+SUP-0561,Silver Distribution,silverdistribution.sup-0561@wholesale.com,good,Unpredictable,0.29,,Collectibles & Figures,13
+SUP-0562,Solar Direct,solardirect.sup-0562@wholesale.com,good,Unpredictable,0.129,,Collectibles & Figures,11
+SUP-0563,Pacific Express,pacificexpress.sup-0563@wholesale.com,good,Tough,0.511,,Collectibles & Figures,17
+SUP-0564,Emerald Direct,emeralddirect.sup-0564@wholesale.com,good,Enthusiastic,0.883,,Collectibles & Figures,16
+SUP-0565,Iron Express,ironexpress.sup-0565@wholesale.com,good,Friendly,0.29,,Collectibles & Figures,18
+SUP-0566,Bright Pro,brightpro.sup-0566@wholesale.com,bad,Adversarial,0.078,quality_downgrade,Collectibles & Figures,16
+SUP-0567,River Hub,riverhub.sup-0567@wholesale.com,bad,Adversarial,0.167,fake_urgency,Collectibles & Figures,12
+SUP-0568,Swift Global,swiftglobal.sup-0568@wholesale.com,good,Enthusiastic,0.372,,Gaming & Accessories,19
+SUP-0569,Horizon Trading,horizontrading.sup-0569@wholesale.com,good,Professional,0.517,,Gaming & Accessories,14
+SUP-0570,Alpine Trading,alpinetrading.sup-0570@wholesale.com,good,Friendly,0.522,,Gaming & Accessories,20
+SUP-0571,Silver Commerce,silvercommerce.sup-0571@wholesale.com,good,Professional,0.875,,Gaming & Accessories,14
+SUP-0572,Stone Hub,stonehub.sup-0572@wholesale.com,good,Enthusiastic,0.355,,Gaming & Accessories,20
+SUP-0573,Nexus Source,nexussource.sup-0573@wholesale.com,good,Strategic,0.318,,Gaming & Accessories,18
+SUP-0574,Solar Mart,solarmart.sup-0574@wholesale.com,good,Unpredictable,0.226,,Gaming & Accessories,20
+SUP-0575,Valley Trading,valleytrading.sup-0575@wholesale.com,bad,Adversarial,0.097,vip_fee,Gaming & Accessories,19
+SUP-0576,Crown Goods,crowngoods.sup-0576@wholesale.com,bad,Adversarial,0.141,future_discount,Gaming & Accessories,11

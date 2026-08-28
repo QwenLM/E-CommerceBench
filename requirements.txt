@@ -1,0 +1,9 @@
+# Derived from the imports of the tracked sources, versions are the ones this
+# benchmark has been run with.
+openai>=1.40
+anthropic>=0.40          # only for provider "anthropic"; OpenRouter needs just openai
+transformers>=4.40        # HF tokenizer for context accounting
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+requests>=2.31

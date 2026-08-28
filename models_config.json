@@ -1,0 +1,162 @@
+{
+  "_readme": [
+    "E-Commerce Bench model registry. This is the only file you need to edit.",
+    "Pick a key from 'models' and pass it to run.py --model.",
+    "",
+    "These are the 18 models of the paper's leaderboard, at the reasoning-effort",
+    "setting each was evaluated with. The paper's runs reached these models",
+    "through an internal gateway; the entries below name the same models at",
+    "their providers' public endpoints, so results are comparable.",
+    "",
+    "Keys are read from the environment, so this file is safe to commit:",
+    "  openai      -> OPENAI_API_KEY",
+    "  anthropic   -> ANTHROPIC_API_KEY",
+    "  google      -> GEMINI_API_KEY",
+    "  openrouter  -> OPENROUTER_API_KEY",
+    "  others      -> the variable named in the entry's api_key",
+    "",
+    "Fields: provider, model_name, base_url (openai-compatible only), effort",
+    "(low | medium | high | xhigh | max, sent as reasoning_effort), extra_body",
+    "(vendor-documented body fields, e.g. a family's thinking switch),",
+    "thinking_env, api_style (chat | responses).",
+    "",
+    "'npc_tools' is the supplier role-play model. It only renders dialogue; the",
+    "kernel decides every price, so a small cheap model is the right choice and",
+    "it can point at whichever provider you already have a key for."
+  ],
+  "npc_tools": {
+    "provider": "openai",
+    "model": "gpt-4o-mini"
+  },
+  "models": {
+    "gpt-5.6-sol": {
+      "provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "api_style": "responses",
+      "effort": "max"
+    },
+    "gpt-5.5": {
+      "provider": "openai",
+      "model_name": "gpt-5.5",
+      "api_style": "responses",
+      "effort": "xhigh"
+    },
+    "claude-fable-5": {
+      "provider": "anthropic",
+      "model_name": "claude-fable-5",
+      "thinking_env": "CLAUDE_THINKING",
+      "effort": "max"
+    },
+    "claude-opus-4-8": {
+      "provider": "anthropic",
+      "model_name": "claude-opus-4-8",
+      "thinking_env": "CLAUDE_THINKING",
+      "effort": "max"
+    },
+    "claude-opus-4-7": {
+      "provider": "anthropic",
+      "model_name": "claude-opus-4-7",
+      "thinking_env": "CLAUDE_THINKING",
+      "effort": "max"
+    },
+    "claude-opus-4-6": {
+      "provider": "anthropic",
+      "model_name": "claude-opus-4-6-20260205",
+      "thinking_env": "CLAUDE_THINKING",
+      "effort": "max"
+    },
+    "gemini-3.5-flash": {
+      "provider": "google",
+      "model_name": "gemini-3.5-flash",
+      "effort": "high"
+    },
+    "gemini-3.1-pro": {
+      "provider": "google",
+      "model_name": "gemini-3.1-pro-preview",
+      "effort": "high"
+    },
+    "qwen3.8-max-preview": {
+      "provider": "openai-compatible",
+      "model_name": "qwen3.8-max-preview",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "${DASHSCOPE_API_KEY}"
+    },
+    "qwen3.7-max": {
+      "provider": "openai-compatible",
+      "model_name": "qwen3.7-max",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "${DASHSCOPE_API_KEY}"
+    },
+    "qwen3.6-plus": {
+      "provider": "openai-compatible",
+      "model_name": "qwen3.6-plus",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "${DASHSCOPE_API_KEY}"
+    },
+    "qwen3.5-plus": {
+      "provider": "openai-compatible",
+      "model_name": "qwen3.5-plus",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "api_key": "${DASHSCOPE_API_KEY}"
+    },
+    "glm-5.2-max": {
+      "provider": "openai-compatible",
+      "model_name": "glm-5.2",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "api_key": "${ZHIPU_API_KEY}",
+      "extra_body": {
+        "thinking": {
+          "type": "enabled"
+        }
+      },
+      "effort": "max"
+    },
+    "glm-5.2-high": {
+      "provider": "openai-compatible",
+      "model_name": "glm-5.2",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "api_key": "${ZHIPU_API_KEY}",
+      "extra_body": {
+        "thinking": {
+          "type": "enabled"
+        }
+      },
+      "effort": "high"
+    },
+    "glm-5.1": {
+      "provider": "openai-compatible",
+      "model_name": "glm-5.1",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "api_key": "${ZHIPU_API_KEY}",
+      "extra_body": {
+        "thinking": {
+          "type": "enabled"
+        }
+      }
+    },
+    "kimi-k3": {
+      "provider": "openai-compatible",
+      "model_name": "kimi-k3",
+      "base_url": "https://api.moonshot.cn/v1",
+      "api_key": "${MOONSHOT_API_KEY}"
+    },
+    "kimi-k2.6": {
+      "provider": "openai-compatible",
+      "model_name": "kimi-k2.6",
+      "base_url": "https://api.moonshot.cn/v1",
+      "api_key": "${MOONSHOT_API_KEY}"
+    },
+    "deepseek-v4-pro": {
+      "provider": "openai-compatible",
+      "model_name": "deepseek-v4-pro",
+      "base_url": "https://api.deepseek.com/v1",
+      "api_key": "${DEEPSEEK_API_KEY}",
+      "extra_body": {
+        "thinking": {
+          "type": "enabled"
+        }
+      },
+      "effort": "max"
+    }
+  }
+}

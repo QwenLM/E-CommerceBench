@@ -1,0 +1,61 @@
+category,store_type,default_size,ref_price_min,ref_price_max,monthly_sales_min,monthly_sales_max,return_rate_min,return_rate_max,return_rate_description,elasticity_type,elasticity_param,wholesale_ratio,cost_floor_ratio,scam_cap_ratio
+Major Appliances,appliance_digital,XLarge,500,2500,100,500,0.1,0.2,Moderate return rate due to size/installation issues.,quadratic,5.212,0.86,0.72,0.5
+Small Appliances,appliance_digital,Large,50,600,500,1000,0.03,0.1,Low to moderate return rate.,exponential,2.583,0.78,0.55,0.7
+Audio & Video Electronics,appliance_digital,Large,100,1500,1000,3000,0.0,0.03,Very low return rate.,constant_elasticity,1.631,0.82,0.65,0.72
+Smartphones,appliance_digital,Small,300,3000,1000,3000,0.0,0.03,Very low return rate.,linear,3.949,0.84,0.68,0.75
+Laptops,appliance_digital,Medium,800,5000,1000,3000,0.0,0.03,Very low return rate.,quadratic,4.129,0.85,0.7,0.78
+Computer Hardware & Peripherals,appliance_digital,Medium,30,800,1000,3000,0.03,0.1,Low to moderate return rate.,exponential,3.598,0.72,0.45,0.6
+3C Digital Accessories,appliance_digital,Small,5,150,1000,3000,0.1,0.2,Moderate return rate; compatibility issues common.,quadratic,5.779,0.7,0.4,0.55
+Storage Devices,appliance_digital,Small,20,400,50,100,0.0,0.03,Very low return rate.,quadratic,3.839,0.78,0.55,0.7
+Networking Equipment,appliance_digital,Medium,30,500,1000,3000,0.03,0.1,Low to moderate return rate.,constant_elasticity,2.746,0.75,0.5,0.65
+Women's Fashion,fashion,Medium,30,300,100,500,0.4,0.55,This category has a notably high return rate. Fit and style mismatches are very common.,quadratic,5.74,0.7,0.39,0.44
+Men's Clothing,fashion,Medium,30,250,50,100,0.4,0.55,This category has a notably high return rate.,linear,2.428,0.71,0.42,0.46
+Underwear & Loungewear,fashion,Small,15,120,500,1000,0.2,0.4,Elevated return rate due to sizing issues.,quadratic,5.368,0.69,0.375,0.425
+Fashion Accessories,fashion,Small,10,150,500,1000,0.2,0.4,Elevated return rate.,linear,2.995,0.69,0.385,0.435
+Sportswear & Casual,fashion,Medium,30,250,1000,3000,0.2,0.4,Elevated return rate; sizing varies between brands.,linear,3.411,0.69,0.385,0.435
+Women's Shoes,shoes_bags,Medium,40,400,1000,3000,0.4,0.55,Very high return rate; fit issues are the primary driver.,constant_elasticity,2.053,0.72,0.45,0.88
+Men's Shoes,shoes_bags,Medium,50,400,1500,2500,0.1,0.2,Moderate return rate.,quadratic,4.633,0.75,0.5,0.88
+Sneakers,shoes_bags,Medium,80,600,1500,2500,0.2,0.4,Elevated return rate; sizing inconsistency across brands.,quadratic,2.795,0.92,0.84,0.93
+Bags & Luggage,shoes_bags,Large,50,1000,500,1000,0.0,0.03,Very low return rate.,constant_elasticity,2.891,0.8,0.6,0.9
+Snacks & Nuts,food_beverage,Small,8,60,100,500,0.2,0.35,Very low return rate.,linear,2.918,0.79,0.572,0.611
+Groceries & Staples,food_beverage,Small,10,80,50,100,0.2,0.35,Low return rate.,exponential,3.924,0.78,0.566,0.605
+Coffee & Beverages,food_beverage,Small,10,60,50,100,0.2,0.35,Low return rate.,exponential,4.257,0.78,0.566,0.605
+Fresh Food & Meat,food_beverage,Medium,15,120,0,50,0.2,0.35,"Low return rate, but perishability is a concern.",linear,3.531,0.78,0.559,0.598
+Alcoholic Beverages,food_beverage,Medium,20,500,50,100,0.2,0.35,Low return rate.,quadratic,3.544,0.77,0.546,0.585
+Health Supplements,food_beverage,Small,30,200,100,500,0.2,0.35,Very low return rate.,quadratic,2.974,0.75,0.507,0.552
+Skincare & Beauty,beauty,Small,15,400,3000,5000,0.1,0.2,Moderate return rate; skin sensitivity reactions occasionally reported.,exponential,3.133,0.65,0.3,0.45
+Beauty Devices,beauty,Medium,80,1000,1000,3000,0.03,0.1,Low return rate.,exponential,4.73,0.7,0.4,0.55
+Personal Care & Massage,beauty,Medium,30,600,1000,3000,0.0,0.03,Very low return rate.,constant_elasticity,1.352,0.72,0.45,0.6
+Sports & Fitness,sports_outdoor,Medium,15,300,100,500,0.03,0.1,Low return rate.,constant_elasticity,2.204,0.58,0.17,0.27
+Sports Bags & Accessories,sports_outdoor,Large,30,400,1000,3000,0.1,0.2,Moderate return rate.,quadratic,3.877,0.59,0.19,0.31
+Outdoor & Camping,sports_outdoor,Large,20,600,50,100,0.0,0.03,Very low return rate.,constant_elasticity,1.961,0.58,0.17,0.27
+Children's Clothing,mother_baby,Small,15,100,100,500,0.03,0.1,Low return rate.,constant_elasticity,1.42,0.7,0.4,0.55
+Children's Shoes,mother_baby,Small,20,120,500,1000,0.03,0.1,Low return rate.,quadratic,3.241,0.72,0.45,0.6
+Baby Products,mother_baby,Medium,15,400,1000,3000,0.0,0.03,Very low return rate. Safety-conscious buyers rarely return.,linear,2.629,0.68,0.35,0.5
+Maternity Products,mother_baby,Small,20,200,50,100,0.03,0.1,Low return rate.,quadratic,4.716,0.75,0.5,0.65
+Toys & Educational,mother_baby,Large,15,600,1000,3000,0.1,0.2,Moderate return rate; age-appropriateness mismatches.,exponential,4.687,0.65,0.3,0.45
+Furniture,home_living,Large,100,800,50,100,0.2,0.35,Moderate return rate; size/color mismatch with room.,exponential,4.944,0.86,0.73,0.88
+Bedding,home_living,Large,30,400,100,500,0.2,0.35,Low return rate.,exponential,4.023,0.85,0.7,0.85
+Household Essentials,home_living,Small,3,50,0,50,0.2,0.35,Low return rate.,constant_elasticity,2.059,0.87,0.74,0.89
+Storage & Organization,home_living,Medium,10,100,1000,3000,0.2,0.35,Low return rate.,constant_elasticity,2.898,0.84,0.69,0.84
+Lighting,home_living,Medium,15,500,1000,3000,0.2,0.35,Very low return rate.,constant_elasticity,2.507,0.86,0.73,0.88
+Home Building Materials,home_living,Large,20,400,1000,3000,0.2,0.35,Very low return rate.,constant_elasticity,2.612,0.87,0.74,0.89
+Basic Construction Materials,home_living,Medium,10,200,1000,3000,0.2,0.35,Very low return rate.,exponential,3.889,0.86,0.72,0.87
+Cleaning Tools,home_living,Small,5,50,0,50,0.2,0.35,Very low return rate.,exponential,3.419,0.87,0.74,0.89
+Kitchenware,home_living,Medium,8,200,500,1000,0.2,0.35,Very low return rate.,constant_elasticity,2.506,0.83,0.67,0.82
+Cleaning & Hygiene,daily_office,Small,5,60,100,500,0.2,0.35,Very low return rate.,linear,3.411,0.78,0.566,0.605
+Gifts & Party Supplies,daily_office,Small,5,80,0,50,0.2,0.35,Very low return rate.,exponential,3.392,0.77,0.533,0.585
+Lifestyle Accessories,daily_office,Small,20,400,100,500,0.2,0.35,Low return rate.,linear,2.891,0.77,0.533,0.585
+Stationery & Office Supplies,daily_office,Small,3,80,100,500,0.2,0.35,Low return rate.,exponential,4.659,0.76,0.52,0.572
+Office Equipment,daily_office,Large,20,600,500,1000,0.2,0.35,Low return rate.,linear,3.896,0.78,0.552,0.598
+Medical Devices,daily_office,Small,10,800,100,500,0.2,0.35,Low return rate.,constant_elasticity,2.314,0.77,0.533,0.585
+Pet Supplies,pet,Small,8,150,300,1500,0.0,0.03,Very low return rate. Pet owners research carefully before buying.,quadratic,4.556,0.61,0.22,0.28
+Auto Accessories,auto_hardware,Medium,10,400,100,500,0.0,0.08,Low return rate.,exponential,4.942,0.92,0.84,0.92
+Hardware & Tools,auto_hardware,Medium,5,200,100,500,0.0,0.08,Very low return rate.,constant_elasticity,2.35,0.93,0.86,0.93
+Electrical Supplies,auto_hardware,Small,3,80,1000,3000,0.0,0.08,Very low return rate.,quadratic,4.521,0.94,0.88,0.94
+Electronic Components,auto_hardware,Small,1,50,0,50,0.0,0.08,Low return rate.,constant_elasticity,2.219,0.95,0.9,0.95
+E-Vehicles & Parts,auto_hardware,XLarge,100,1200,100,500,0.0,0.08,Very low return rate.,exponential,4.812,0.92,0.83,0.9
+Agricultural Supplies,auto_hardware,Large,10,400,50,100,0.0,0.08,Very low return rate.,linear,2.185,0.93,0.85,0.92
+Industrial & Lab Supplies,auto_hardware,Medium,10,200,0,50,0.0,0.08,Low return rate.,exponential,4.229,0.93,0.85,0.92
+Collectibles & Figures,toys_entertainment,Small,15,500,100,500,0.0,0.03,Very low return rate. Collectors keep what they buy.,constant_elasticity,1.777,0.63,0.26,0.4
+Gaming & Accessories,toys_entertainment,Small,30,1000,50,100,0.03,0.1,Low return rate.,quadratic,3.707,0.66,0.31,0.45

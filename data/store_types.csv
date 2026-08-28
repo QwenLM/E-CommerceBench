@@ -1,0 +1,13 @@
+store_type_id,store_type_name,tier,setup_fee,daily_rent,sales_commission_rate,allowed_categories,num_categories
+appliance_digital,Appliance & Digital,2,500.0,100.0,0.02,Major Appliances|Small Appliances|Audio & Video Electronics|Smartphones|Laptops|Computer Hardware & Peripherals|3C Digital Accessories|Storage Devices|Networking Equipment,9
+fashion,Fashion,2,500.0,100.0,0.02,Women's Fashion|Men's Clothing|Underwear & Loungewear|Fashion Accessories|Sportswear & Casual,5
+shoes_bags,Shoes & Bags,2,500.0,100.0,0.02,Women's Shoes|Men's Shoes|Sneakers|Bags & Luggage,4
+food_beverage,Food & Beverage,1,500.0,130.0,0.02,Snacks & Nuts|Groceries & Staples|Coffee & Beverages|Fresh Food & Meat|Alcoholic Beverages|Health Supplements,6
+beauty,Beauty,3,500.0,45.0,0.02,Skincare & Beauty|Beauty Devices|Personal Care & Massage,3
+sports_outdoor,Sports & Outdoor,3,500.0,45.0,0.02,Sports & Fitness|Sports Bags & Accessories|Outdoor & Camping,3
+mother_baby,Mother & Baby,2,500.0,100.0,0.02,Children's Clothing|Children's Shoes|Baby Products|Maternity Products|Toys & Educational,5
+home_living,Home & Living,1,500.0,130.0,0.02,Furniture|Bedding|Household Essentials|Storage & Organization|Lighting|Home Building Materials|Basic Construction Materials|Cleaning Tools|Kitchenware,9
+daily_office,Daily & Office,1,500.0,130.0,0.02,Cleaning & Hygiene|Gifts & Party Supplies|Lifestyle Accessories|Stationery & Office Supplies|Office Equipment|Medical Devices,6
+pet,Pet Supplies,3,500.0,45.0,0.02,Pet Supplies,1
+auto_hardware,Auto & Hardware,1,500.0,130.0,0.02,Auto Accessories|Hardware & Tools|Electrical Supplies|Electronic Components|E-Vehicles & Parts|Agricultural Supplies|Industrial & Lab Supplies,7
+toys_entertainment,Toys & Entertainment,3,500.0,45.0,0.02,Collectibles & Figures|Gaming & Accessories,2
