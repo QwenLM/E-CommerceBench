@@ -1,6 +1,7 @@
 # E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation
 
 <a target="_blank" href="https://arxiv.org/abs/2608.30730"><img src="https://img.shields.io/badge/arXiv-2608.30730-b31b1b?style=for-the-badge&logo=arxiv" alt="arXiv"></a>
+<a href="https://ecbench.github.io" target="_blank"><img alt="Website" src="https://img.shields.io/badge/🌎_Homepage-blue.svg?style=for-the-badge" /></a>
 <a target="_blank" href="#cite"><img src="https://img.shields.io/badge/Cite-BibTeX-lightgrey?style=for-the-badge&logo=googlescholar" alt="Cite"></a>
 <a target="_blank" href="#"><img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
 
