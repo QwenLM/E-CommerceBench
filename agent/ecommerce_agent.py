@@ -9,7 +9,8 @@ from typing import Any, Dict, List, Optional
 from .llm_client import MultiProviderClient
 from . import providers
 from .ecommerce_tool_manager import EcommerceToolManager
-from .prompts import SYSTEM_PROMPT, USER_PROMPT, CONTEXT_WINDOW_PROMPT
+from .prompts import CONTEXT_WINDOW_PROMPT
+from .job import build_ecommerce_job, normalize_termination_reason
 
 logger = logging.getLogger(__name__)
 
@@ -77,7 +78,11 @@ def setup_model_env(model_cfg: Dict[str, Any]) -> None:
     if effort_value and not os.environ.get("MODEL_EFFORT"):
         os.environ["MODEL_EFFORT"] = str(effort_value)
         logger.info(f"Set MODEL_EFFORT={effort_value} (config default)")
+    setup_npc_env()
 
+
+def setup_npc_env() -> None:
+    """Configure the benchmark-owned supplier dialogue model."""
     npc_config = dict(load_models_config().get("npc_tools", {}) or {})
     # the NPC entry names its model under "model"; resolve() expects "model_name"
     npc_config.setdefault("model_name", npc_config.get("model", ""))
@@ -452,59 +457,24 @@ class EcommerceBenchAgent:
 
     @staticmethod
     def _normalize_termination_reason(job: Dict[str, Any]) -> None:
-        """Collapse the detailed termination reason into the two canonical
-        terminal states the rest of the pipeline expects. Every episode ends as
-        either ``env_completed`` (ran the full horizon) or ``env_terminated``
-        (ended early for any other reason: bankruptcy, agent idle, llm error,
-        max turns). The original reason is preserved in ``termination_detail``
-        for logging/debugging.
-        """
-        detail = job.get("termination_reason") or "unknown"
-        job["termination_detail"] = detail
-        if detail in ("env_completed", "max_days_reached"):
-            job["termination_reason"] = "env_completed"
-        else:
-            job["termination_reason"] = "env_terminated"
+        normalize_termination_reason(job)
 
     def _build_default_job(self) -> Dict[str, Any]:
-        user_prompt = (
-            USER_PROMPT.replace("{daily_rent}", str(self.daily_fee))
-            .replace("{max_days}", str(self.max_day))
-            .replace("{max_token_capacity}", str(self.max_token_capacity))
-            .replace("{initial_balance}", str(int(self.initial_balance)))
+        context_prompt = CONTEXT_WINDOW_PROMPT.format(
+            max_token_capacity=self.max_token_capacity,
+            context_trigger=self.context_trigger,
+            context_clear_at_least=self.context_clear_at_least,
+            context_keep=self.context_keep_tool_use,
         )
-        system_prompt = (
-            SYSTEM_PROMPT
-            + CONTEXT_WINDOW_PROMPT.format(
-                max_token_capacity=self.max_token_capacity,
-                context_trigger=self.context_trigger,
-                context_clear_at_least=self.context_clear_at_least,
-                context_keep=self.context_keep_tool_use,
-            )
-            + user_prompt
+        return build_ecommerce_job(
+            max_turns=self.max_turns,
+            max_day=self.max_day,
+            initial_balance=self.initial_balance,
+            daily_fee=self.daily_fee,
+            tool_schemas=self.tool_schemas,
+            system_prompt_suffix=context_prompt,
+            run_index=self.run_index,
         )
-
-        return {
-            "task": "agent_multiturn/long_horizon/ecommerce_bench",
-            "idx": 0,
-            "agent_info": {
-                "task": "ecommerce_bench",
-                "allow_parallel_tool_calls": True,
-                "max_tool_response_chars": 64 * 1024,
-                "max_turn": self.max_turns,
-                "max_day": self.max_day,
-                "initial_balance": self.initial_balance,
-                "daily_fee": self.daily_fee,
-            },
-            "tool_schemas": self.tool_schemas,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": "You are running an e-commerce business."},
-            ],
-            "traj": [],
-            "database": {},
-            "data_source": "ecommerce_bench",
-        }
 
     def _create_context_manager(self):
         from context_manager.base import ContextManager

@@ -429,6 +429,22 @@ python evaluation/plot_daily_balance.py log/<session>/run_*_daily_balance.csv --
 python evaluation/extract_chatbox.py log/<session>/run_0_messages.jsonl   # per-supplier dialogue
 ```
 
+### External Agent Runtimes
+
+To evaluate an agent framework rather than only a model provider, run the
+external-agent adapter:
+
+```bash
+python external_agent_server.py --token local-token --log-dir log/external
+```
+
+The external runtime reads the canonical task and tool schemas from
+`GET /v1/session`, then submits tool calls to `POST /v1/actions`. Actions use the
+same tool manager, environment transitions, logs, and scoring as the built-in
+agent. See [docs/external_agents.md](docs/external_agents.md) for the protocol
+and an in-process Python example.
+
+
 ## Repository Structure
 
 ```
@@ -438,7 +454,8 @@ tools/            the 18 tools the agent acts through
   opponent/       negotiation: kernel, per-(supplier,SKU) instances, fraud, metrics
 data/             products, suppliers, categories, events, promotions
 evaluation/       plotting and log-analysis scripts
-docs/             model_providers.md — how to configure a model
+docs/             model provider and external-agent protocol documentation
+external_agent_server.py  HTTP adapter for external agent runtimes
 ```
 
 ## License
