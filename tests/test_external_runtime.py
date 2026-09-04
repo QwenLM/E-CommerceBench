@@ -3,6 +3,7 @@ import os
 import tempfile
 import threading
 import unittest
+from types import SimpleNamespace
 from http.server import ThreadingHTTPServer
 from unittest.mock import patch
 from urllib.error import HTTPError
@@ -15,6 +16,7 @@ from agent.job import build_ecommerce_job
 from agent.prompts import CONTEXT_WINDOW_PROMPT, SYSTEM_PROMPT, USER_PROMPT
 from external_agent_server import ExternalAgentHandler
 from tools import ECOMMERCE_TOOL_SCHEMAS
+from tools.opponent.supplier_llm import _call_supplier_llm
 
 
 class ExternalAgentSessionTest(unittest.TestCase):
@@ -63,6 +65,28 @@ class ExternalAgentSessionTest(unittest.TestCase):
             SYSTEM_PROMPT + context_prompt + user_prompt,
         )
         self.assertEqual(job["agent_info"]["run_index"], 7)
+
+    def test_supplier_model_is_resolved_when_the_request_is_sent(self):
+        completion = SimpleNamespace(
+            choices=[SimpleNamespace(message=SimpleNamespace(content="ok"))]
+        )
+        with patch.dict(
+            os.environ,
+            {"GPT_API_KEY": "test-key", "NPC_MODEL": "configured-model"},
+        ), patch("openai.OpenAI") as openai:
+            openai.return_value.chat.completions.create.return_value = completion
+            result = _call_supplier_llm([{"role": "user", "content": "hello"}])
+
+        self.assertEqual(result, "ok")
+        self.assertEqual(
+            openai.return_value.chat.completions.create.call_args.kwargs["model"],
+            "configured-model",
+        )
+        openai.assert_called_once_with(
+            api_key="test-key",
+            timeout=30.0,
+            max_retries=0,
+        )
 
     def test_external_session_uses_canonical_tool_execution(self):
         session = ExternalAgentSession(log_dir=self.temporary_directory.name)

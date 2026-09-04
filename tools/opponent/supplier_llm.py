@@ -9,7 +9,7 @@ from .chatbox_helpers import (
 )
 from .scam_handler import get_scam_instructions
 
-SUPPLIER_MODEL = os.getenv("NPC_MODEL", "gpt-4o-mini-2024-07-18")
+DEFAULT_SUPPLIER_MODEL = "gpt-4o-mini-2024-07-18"
 
 SUPPLIER_SYSTEM_PROMPT = """\
 You are {supplier_name}, a wholesale supplier for e-commerce products.
@@ -106,22 +106,29 @@ def _call_supplier_llm(messages: List[Dict[str, str]]) -> str:
             "The supplier NPC has no API key. Set the npc_tools entry in "
             "models_config.json, or export OPENAI_API_KEY."
         )
-    client = OpenAI(api_key=api_key, **({"base_url": base_url} if base_url else {}))
+    client = OpenAI(
+        api_key=api_key,
+        timeout=30.0,
+        max_retries=0,
+        **({"base_url": base_url} if base_url else {}),
+    )
 
-    max_retries = 6
+    max_retries = 3
     for attempt in range(max_retries):
         try:
             completion = client.chat.completions.create(
-                model=SUPPLIER_MODEL,
+                model=os.getenv("NPC_MODEL", DEFAULT_SUPPLIER_MODEL),
                 messages=messages,
-                max_completion_tokens=4096,
+                max_completion_tokens=int(
+                    os.getenv("NPC_MAX_COMPLETION_TOKENS", "800")
+                ),
                 stream=False,
             )
             return completion.choices[0].message.content or ""
         except Exception as e:
             print(f"Attempt {attempt + 1}/{max_retries} failed: {e}")
             if attempt < max_retries - 1:
-                time.sleep(60)
+                time.sleep(2**attempt)
             else:
                 raise
 
