@@ -18,21 +18,12 @@ An agent starts with ¥100,000 and runs up to four stores for 365 simulated days
 The primary score is the **asset multiplier**, end-of-year total assets over the
 opening balance, averaged over 5 independent episodes per model.
 
-<style>
-.lb-table { border-collapse: collapse; font-size: 13px; width: 100%; margin: 16px 0; }
-.lb-table th, .lb-table td { padding: 5px 8px; text-align: right; border-bottom: 1px solid #e0e0e0; }
-.lb-table th { background: #f5f5f5; font-weight: 600; text-align: center; border-bottom: 2px solid #ccc; }
-.lb-table th:first-child, .lb-table td:first-child { text-align: left; }
-.lb-table .tier-row td { background: #fafafa; font-style: italic; font-weight: 600; text-align: left; border-bottom: 1px solid #ccc; }
-.lb-table .best { background: #e8f5e9; font-weight: 700; }
-.lb-table tr:last-child td { border-bottom: 2px solid #ccc; }
-</style>
-
-<table class="lb-table">
-<caption style="caption-side:top; text-align:left; font-size:13px; color:#555; margin-bottom:8px;">
-<b>Table 1:</b> End-of-year leaderboard, 18 models, five episodes each, sorted by mean final assets within tier.
-Tinted cells mark the best scored column. †GPT-5.5's spread is a population estimate, ¥689k on the sample estimator.
+<table>
+<caption>
+<b>Table 1:</b> End-of-year leaderboard, 21 models, five episodes each, sorted by mean final assets within tier.
+Bold values mark the best scored column. †GPT-5.5's spread is a population estimate, ¥689k on the sample estimator.
 ‡GPT-5.5's AnchorRatio averages three episodes, its two bankrupt runs opening no repeat order with a supplier it had already dealt with.
+Qwen3.8-Max and GLM-5.3 rows are post-publication evaluations under the same benchmark protocol.
 </caption>
 <thead>
 <tr>
@@ -109,6 +100,20 @@ Tinted cells mark the best scored column. †GPT-5.5's spread is a population es
   <td>0/5</td>
 </tr>
 <tr>
+  <td>Qwen3.8-Max</td>
+  <td>472</td>
+  <td>165</td>
+  <td>0.660</td>
+  <td>18.37</td>
+  <td>0.172</td>
+  <td>246</td>
+  <td>2.88</td>
+  <td>1.522</td>
+  <td>1,514</td>
+  <td>714</td>
+  <td>0/5</td>
+</tr>
+<tr>
   <td>Claude Opus 4.7 (max)</td>
   <td>259</td>
   <td>111</td>
@@ -180,6 +185,20 @@ Tinted cells mark the best scored column. †GPT-5.5's spread is a population es
   <td>0/5</td>
 </tr>
 <tr>
+  <td>GLM-5.3 (max)</td>
+  <td>391</td>
+  <td>167</td>
+  <td>0.668</td>
+  <td>16.71</td>
+  <td>0.780</td>
+  <td>193</td>
+  <td>0.34</td>
+  <td>1.493</td>
+  <td>1,510</td>
+  <td>1,068</td>
+  <td>0/5</td>
+</tr>
+<tr>
   <td>GLM 5.2 (high)</td>
   <td>301</td>
   <td>124</td>
@@ -205,6 +224,20 @@ Tinted cells mark the best scored column. †GPT-5.5's spread is a population es
   <td>1.507</td>
   <td>1,334</td>
   <td>878</td>
+  <td>0/5</td>
+</tr>
+<tr>
+  <td>GLM-5.3-Flash (max)</td>
+  <td>258</td>
+  <td>88</td>
+  <td>0.729</td>
+  <td>27.92</td>
+  <td>0.533</td>
+  <td>136</td>
+  <td>2.81</td>
+  <td>1.460</td>
+  <td>1,160</td>
+  <td>989</td>
   <td>0/5</td>
 </tr>
 <tr>
@@ -383,7 +416,7 @@ export DEEPSEEK_API_KEY=...         # DeepSeek
 
 ## Experiment Configuration
 
-`models_config.json` holds the 18 models of the leaderboard above, each at the
+`models_config.json` holds the original 18 models from the paper evaluation, each at the
 reasoning effort it was evaluated with. Pass an entry key to `--model`:
 
 ```
